@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */; };
 		525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BB23DC033800DDF2EB /* AppDelegate.swift */; };
 		525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BD23DC033800DDF2EB /* SceneDelegate.swift */; };
 		525004C023DC033800DDF2EB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BF23DC033800DDF2EB /* FirstViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGradesTableViewController.swift; sourceTree = "<group>"; };
 		525004B823DC033800DDF2EB /* AIU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AIU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525004BB23DC033800DDF2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525004BD23DC033800DDF2EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				52B9205523E45EFC00420E76 /* HomeTableViewController.swift */,
 				52A972CC23E95DD5005A185D /* ScheduleViewController.swift */,
 				52F7BD4823F296B6001CE15E /* ContactViewController.swift */,
+				5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */,
 				52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */,
 				52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */,
+				5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */,
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
 				525004C623DC033800DDF2EB /* AIU_App.xcdatamodeld in Sources */,
 				5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */,

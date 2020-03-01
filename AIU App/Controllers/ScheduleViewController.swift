@@ -7,18 +7,28 @@
 //
 
 import UIKit
+import WebKit
 
-class ScheduleViewController: UIViewController {
+class ScheduleViewController: UIViewController, WKNavigationDelegate {
     
-    @IBOutlet weak var webView: UIWebView!
+    //@IBOutlet weak var webView: UIWebView!
+    
+    var webView: WKWebView!
+    
+    
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        let url = URL(string: "http://electronic.iaau.edu.kg")
-        
-        webView.loadRequest(URLRequest(url: url!))
+        let url = URL(string: "https://www.apple.com")
+        webView.load(URLRequest(url: url!))
+        webView.allowsBackForwardNavigationGestures = true
     }
     
 }
