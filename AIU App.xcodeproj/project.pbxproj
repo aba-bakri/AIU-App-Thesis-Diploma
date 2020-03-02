@@ -22,6 +22,7 @@
 		52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A972CC23E95DD5005A185D /* ScheduleViewController.swift */; };
 		52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9204F23E45E5500420E76 /* MenuTableViewController.swift */; };
 		52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9205523E45EFC00420E76 /* HomeTableViewController.swift */; };
+		52CA2AD1240CB6FF006888A6 /* SeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA2AD0240CB6FF006888A6 /* SeminarViewController.swift */; };
 		52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BD4823F296B6001CE15E /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		52A972CC23E95DD5005A185D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		52B9204F23E45E5500420E76 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		52B9205523E45EFC00420E76 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		52CA2AD0240CB6FF006888A6 /* SeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeminarViewController.swift; sourceTree = "<group>"; };
 		52F7BD4823F296B6001CE15E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				52A972CC23E95DD5005A185D /* ScheduleViewController.swift */,
 				52F7BD4823F296B6001CE15E /* ContactViewController.swift */,
 				5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */,
+				52CA2AD0240CB6FF006888A6 /* SeminarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */,
 				525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */,
 				52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */,
+				52CA2AD1240CB6FF006888A6 /* SeminarViewController.swift in Sources */,
 				52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */,
 				52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */,
 				5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */,

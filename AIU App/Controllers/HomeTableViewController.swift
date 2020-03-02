@@ -16,6 +16,5 @@ class HomeTableViewController: UITableViewController {
         // Do any additional setup after loading the view.
         tableView.backgroundColor = .white
         navigationController?.navigationBar.tintColor = .black
-    }
-
+    }    
 }
