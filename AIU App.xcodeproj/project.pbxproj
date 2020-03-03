@@ -19,6 +19,7 @@
 		525004E123DC033900DDF2EB /* AIU_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004E023DC033900DDF2EB /* AIU_AppUITests.swift */; };
 		5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA323DC211B0070BC17 /* SignInViewController.swift */; };
 		5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */; };
+		5297F67C240D0E7900D372F7 /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297F67B240D0E7900D372F7 /* MailViewController.swift */; };
 		52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A972CC23E95DD5005A185D /* ScheduleViewController.swift */; };
 		52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9204F23E45E5500420E76 /* MenuTableViewController.swift */; };
 		52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9205523E45EFC00420E76 /* HomeTableViewController.swift */; };
@@ -62,6 +63,7 @@
 		525004E223DC033900DDF2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5270EEA323DC211B0070BC17 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformationViewController.swift; sourceTree = "<group>"; };
+		5297F67B240D0E7900D372F7 /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		52A972CC23E95DD5005A185D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		52B9204F23E45E5500420E76 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		52B9205523E45EFC00420E76 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		52B9205123E45E5B00420E76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5297F67B240D0E7900D372F7 /* MailViewController.swift */,
 				525004BF23DC033800DDF2EB /* FirstViewController.swift */,
 				5270EEA323DC211B0070BC17 /* SignInViewController.swift */,
 				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
@@ -327,6 +330,7 @@
 				52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */,
 				5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */,
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
+				5297F67C240D0E7900D372F7 /* MailViewController.swift in Sources */,
 				525004C623DC033800DDF2EB /* AIU_App.xcdatamodeld in Sources */,
 				5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */,
 				52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */,

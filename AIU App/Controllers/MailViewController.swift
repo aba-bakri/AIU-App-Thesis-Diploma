@@ -1,20 +1,17 @@
 //
-//  ScheduleViewController.swift
+//  MailViewController.swift
 //  AIU App
 //
-//  Created by Aba-Bakri on 2/4/20.
+//  Created by Aba-Bakri on 3/2/20.
 //  Copyright © 2020 Ababakri Ibragimov. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class ScheduleViewController: UIViewController, WKNavigationDelegate {
-    
-    //@IBOutlet weak var webView: UIWebView!
-    
+class MailViewController: UIViewController, WKNavigationDelegate {
+
     var webView: WKWebView!
-    
     
     override func loadView() {
         webView = WKWebView()
@@ -26,9 +23,9 @@ class ScheduleViewController: UIViewController, WKNavigationDelegate {
 
         // Do any additional setup after loading the view.
         
-        let url = URL(string: "http://com.iaau.edu.kg/calendar/schedule-of-lectures.html")
+        let url = URL(string: "https://gmail.com")
         webView.load(URLRequest(url: url!))
         webView.allowsBackForwardNavigationGestures = true
     }
-    
+
 }
