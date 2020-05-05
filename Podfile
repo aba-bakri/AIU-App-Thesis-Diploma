@@ -16,4 +16,10 @@ target 'AIU App' do
     # Pods for testing
   end
 
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+
 end

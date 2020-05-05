@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F016B4EC97288FE13A2C1E1 /* Pods_AIU_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB89172AF4F4D6898F947516 /* Pods_AIU_AppTests.framework */; };
 		5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */; };
 		525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BB23DC033800DDF2EB /* AppDelegate.swift */; };
 		525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BD23DC033800DDF2EB /* SceneDelegate.swift */; };
@@ -19,12 +20,16 @@
 		525004E123DC033900DDF2EB /* AIU_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004E023DC033900DDF2EB /* AIU_AppUITests.swift */; };
 		5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA323DC211B0070BC17 /* SignInViewController.swift */; };
 		5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */; };
+		528DB98224612C7800323E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528DB98124612C7800323E81 /* GoogleService-Info.plist */; };
+		528DB9842461420E00323E81 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DB9832461420E00323E81 /* SignUpViewController.swift */; };
 		5297F67C240D0E7900D372F7 /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297F67B240D0E7900D372F7 /* MailViewController.swift */; };
 		52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A972CC23E95DD5005A185D /* ScheduleViewController.swift */; };
 		52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9204F23E45E5500420E76 /* MenuTableViewController.swift */; };
 		52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9205523E45EFC00420E76 /* HomeTableViewController.swift */; };
 		52CA2AD1240CB6FF006888A6 /* SeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA2AD0240CB6FF006888A6 /* SeminarViewController.swift */; };
 		52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BD4823F296B6001CE15E /* ContactViewController.swift */; };
+		97EC6A051E38B2DBF51E6E0A /* Pods_AIU_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB54BA7C83CA628B544C208 /* Pods_AIU_App.framework */; };
+		C2D270967FAFF456891B8F25 /* Pods_AIU_App_AIU_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55367BB88CF8DCD3DACA69 /* Pods_AIU_App_AIU_AppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1094FC5077552B5BA037B6B8 /* Pods-AIU AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU AppTests.debug.xcconfig"; path = "Target Support Files/Pods-AIU AppTests/Pods-AIU AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		17B5D4BDD90B32BAFC11FEE8 /* Pods-AIU AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU AppTests.release.xcconfig"; path = "Target Support Files/Pods-AIU AppTests/Pods-AIU AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App.release.xcconfig"; path = "Target Support Files/Pods-AIU App/Pods-AIU App.release.xcconfig"; sourceTree = "<group>"; };
 		5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGradesTableViewController.swift; sourceTree = "<group>"; };
 		525004B823DC033800DDF2EB /* AIU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AIU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525004BB23DC033800DDF2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,12 +71,20 @@
 		525004E223DC033900DDF2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5270EEA323DC211B0070BC17 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformationViewController.swift; sourceTree = "<group>"; };
+		528DB98124612C7800323E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		528DB9832461420E00323E81 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5297F67B240D0E7900D372F7 /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		52A972CC23E95DD5005A185D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		52B9204F23E45E5500420E76 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		52B9205523E45EFC00420E76 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		52CA2AD0240CB6FF006888A6 /* SeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeminarViewController.swift; sourceTree = "<group>"; };
 		52F7BD4823F296B6001CE15E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		5A55367BB88CF8DCD3DACA69 /* Pods_AIU_App_AIU_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIU_App_AIU_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB54BA7C83CA628B544C208 /* Pods_AIU_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIU_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D78F8C9BD9E7E0E6CE82D56 /* Pods-AIU App-AIU AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App-AIU AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-AIU App-AIU AppUITests/Pods-AIU App-AIU AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F11EFAC1483328A017B9D88 /* Pods-AIU App-AIU AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App-AIU AppUITests.release.xcconfig"; path = "Target Support Files/Pods-AIU App-AIU AppUITests/Pods-AIU App-AIU AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB89172AF4F4D6898F947516 /* Pods_AIU_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIU_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA0C35F962C80241E335FC5 /* Pods-AIU App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App.debug.xcconfig"; path = "Target Support Files/Pods-AIU App/Pods-AIU App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EC6A051E38B2DBF51E6E0A /* Pods_AIU_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F016B4EC97288FE13A2C1E1 /* Pods_AIU_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +108,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D270967FAFF456891B8F25 /* Pods_AIU_App_AIU_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521F045024603A9F00E433A2 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				525004BF23DC033800DDF2EB /* FirstViewController.swift */,
+				5270EEA323DC211B0070BC17 /* SignInViewController.swift */,
+				528DB9832461420E00323E81 /* SignUpViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
 		525004AF23DC033800DDF2EB = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +132,8 @@
 				525004D423DC033900DDF2EB /* AIU AppTests */,
 				525004DF23DC033900DDF2EB /* AIU AppUITests */,
 				525004B923DC033800DDF2EB /* Products */,
+				B91C42FAE1A9F4039EBEA5B3 /* Pods */,
+				659B6B551426A12C25E9EA45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +155,7 @@
 				52B9205223E45E6900420E76 /* Storyboards */,
 				52B9205423E45E9300420E76 /* Resources */,
 				525004CC23DC033800DDF2EB /* Info.plist */,
+				528DB98124612C7800323E81 /* GoogleService-Info.plist */,
 				525004C423DC033800DDF2EB /* AIU_App.xcdatamodeld */,
 			);
 			path = "AIU App";
@@ -150,9 +182,8 @@
 		52B9205123E45E5B00420E76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				521F045024603A9F00E433A2 /* Authorization */,
 				5297F67B240D0E7900D372F7 /* MailViewController.swift */,
-				525004BF23DC033800DDF2EB /* FirstViewController.swift */,
-				5270EEA323DC211B0070BC17 /* SignInViewController.swift */,
 				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
 				52B9204F23E45E5500420E76 /* MenuTableViewController.swift */,
 				52B9205523E45EFC00420E76 /* HomeTableViewController.swift */,
@@ -190,6 +221,29 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		659B6B551426A12C25E9EA45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BB54BA7C83CA628B544C208 /* Pods_AIU_App.framework */,
+				5A55367BB88CF8DCD3DACA69 /* Pods_AIU_App_AIU_AppUITests.framework */,
+				CB89172AF4F4D6898F947516 /* Pods_AIU_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B91C42FAE1A9F4039EBEA5B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFA0C35F962C80241E335FC5 /* Pods-AIU App.debug.xcconfig */,
+				3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */,
+				6D78F8C9BD9E7E0E6CE82D56 /* Pods-AIU App-AIU AppUITests.debug.xcconfig */,
+				9F11EFAC1483328A017B9D88 /* Pods-AIU App-AIU AppUITests.release.xcconfig */,
+				1094FC5077552B5BA037B6B8 /* Pods-AIU AppTests.debug.xcconfig */,
+				17B5D4BDD90B32BAFC11FEE8 /* Pods-AIU AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525004E523DC033900DDF2EB /* Build configuration list for PBXNativeTarget "AIU App" */;
 			buildPhases = (
+				6F4DC0B16111E17D75F0526A /* [CP] Check Pods Manifest.lock */,
 				525004B423DC033800DDF2EB /* Sources */,
 				525004B523DC033800DDF2EB /* Frameworks */,
 				525004B623DC033800DDF2EB /* Resources */,
+				D7D44C5BAE65CEF7C7045986 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525004E823DC033900DDF2EB /* Build configuration list for PBXNativeTarget "AIU AppTests" */;
 			buildPhases = (
+				4CE8758C4B8B55A83E56DD14 /* [CP] Check Pods Manifest.lock */,
 				525004CD23DC033900DDF2EB /* Sources */,
 				525004CE23DC033900DDF2EB /* Frameworks */,
 				525004CF23DC033900DDF2EB /* Resources */,
@@ -232,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525004EB23DC033900DDF2EB /* Build configuration list for PBXNativeTarget "AIU AppUITests" */;
 			buildPhases = (
+				937E61EFA73B9F24F2C929CF /* [CP] Check Pods Manifest.lock */,
 				525004D823DC033900DDF2EB /* Sources */,
 				525004D923DC033900DDF2EB /* Frameworks */,
 				525004DA23DC033900DDF2EB /* Resources */,
+				DCAD8D20FDD9543CD75E4839 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525004CB23DC033800DDF2EB /* LaunchScreen.storyboard in Resources */,
+				528DB98224612C7800323E81 /* GoogleService-Info.plist in Resources */,
 				525004C823DC033800DDF2EB /* Assets.xcassets in Resources */,
 				525004C323DC033800DDF2EB /* Main.storyboard in Resources */,
 			);
@@ -316,6 +376,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CE8758C4B8B55A83E56DD14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIU AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F4DC0B16111E17D75F0526A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIU App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		937E61EFA73B9F24F2C929CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIU App-AIU AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D44C5BAE65CEF7C7045986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIU App/Pods-AIU App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIU App/Pods-AIU App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIU App/Pods-AIU App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCAD8D20FDD9543CD75E4839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIU App-AIU AppUITests/Pods-AIU App-AIU AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIU App-AIU AppUITests/Pods-AIU App-AIU AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIU App-AIU AppUITests/Pods-AIU App-AIU AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		525004B423DC033800DDF2EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,6 +492,7 @@
 				52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */,
 				52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */,
 				5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */,
+				528DB9842461420E00323E81 /* SignUpViewController.swift in Sources */,
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
 				5297F67C240D0E7900D372F7 /* MailViewController.swift in Sources */,
 				525004C623DC033800DDF2EB /* AIU_App.xcdatamodeld in Sources */,
@@ -504,6 +668,7 @@
 		};
 		525004E623DC033900DDF2EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA0C35F962C80241E335FC5 /* Pods-AIU App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +687,7 @@
 		};
 		525004E723DC033900DDF2EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +706,7 @@
 		};
 		525004E923DC033900DDF2EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1094FC5077552B5BA037B6B8 /* Pods-AIU AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +729,7 @@
 		};
 		525004EA23DC033900DDF2EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B5D4BDD90B32BAFC11FEE8 /* Pods-AIU AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +752,7 @@
 		};
 		525004EC23DC033900DDF2EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D78F8C9BD9E7E0E6CE82D56 /* Pods-AIU App-AIU AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,6 +773,7 @@
 		};
 		525004ED23DC033900DDF2EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F11EFAC1483328A017B9D88 /* Pods-AIU App-AIU AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
