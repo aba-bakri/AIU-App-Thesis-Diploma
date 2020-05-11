@@ -126,107 +126,6 @@
             </objects>
             <point key="canvasLocation" x="345" y="818"/>
         </scene>
-        <!--Seminar-->
-        <scene sceneID="tkF-Aa-zC7">
-            <objects>
-                <viewController id="Zsg-Md-eJj" customClass="SeminarViewController" customModule="AIU_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xii-MH-DPH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-YU-X9w">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="344"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teacher" translatesAutoresizingMaskIntoConstraints="NO" id="dYO-aU-A1V">
-                                        <rect key="frame" x="16" y="35" width="382" height="274"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:00:13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofc-5F-vfk">
-                                        <rect key="frame" x="38" y="297" width="79" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A309" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLz-bi-Fdz">
-                                        <rect key="frame" x="338" y="297" width="38" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tq-fv-nQL">
-                                        <rect key="frame" x="38" y="18" width="55" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kah-ok-XVu">
-                                        <rect key="frame" x="38" y="51" width="223" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seminar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phw-oT-RcH">
-                                        <rect key="frame" x="38" y="80" width="82" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.03920602426" green="0.039221249520000001" blue="0.039205066859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="dYO-aU-A1V" firstAttribute="top" secondItem="qSc-YU-X9w" secondAttribute="top" constant="35" id="J50-hg-p3b"/>
-                                    <constraint firstItem="dYO-aU-A1V" firstAttribute="leading" secondItem="qSc-YU-X9w" secondAttribute="leading" constant="16" id="VTf-4J-bgI"/>
-                                    <constraint firstAttribute="trailing" secondItem="dYO-aU-A1V" secondAttribute="trailing" constant="16" id="mYq-bu-Mcq"/>
-                                    <constraint firstAttribute="bottom" secondItem="dYO-aU-A1V" secondAttribute="bottom" constant="35" id="uyW-Td-4wf"/>
-                                </constraints>
-                            </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iV5-nN-4Pu">
-                                <rect key="frame" x="20" y="361" width="374" height="194"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFI-3u-NC5">
-                                <rect key="frame" x="36" y="638" width="343" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1764705882" green="0.14901960780000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Take in">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qSc-YU-X9w" secondAttribute="trailing" id="HZ1-Fx-lRl"/>
-                            <constraint firstItem="iV5-nN-4Pu" firstAttribute="leading" secondItem="Fqq-Mo-lQm" secondAttribute="leading" constant="20" id="Mpb-Kj-nRs"/>
-                            <constraint firstItem="Fqq-Mo-lQm" firstAttribute="bottom" secondItem="iV5-nN-4Pu" secondAttribute="bottom" constant="181" id="NjI-lj-GhA"/>
-                            <constraint firstItem="qSc-YU-X9w" firstAttribute="top" secondItem="Fqq-Mo-lQm" secondAttribute="top" id="PAt-GG-jpA"/>
-                            <constraint firstItem="Fqq-Mo-lQm" firstAttribute="trailing" secondItem="iV5-nN-4Pu" secondAttribute="trailing" constant="20" id="SJk-wy-2A8"/>
-                            <constraint firstItem="Fqq-Mo-lQm" firstAttribute="bottom" secondItem="qSc-YU-X9w" secondAttribute="bottom" constant="392" id="a53-Oy-dkS"/>
-                            <constraint firstItem="iV5-nN-4Pu" firstAttribute="top" secondItem="qSc-YU-X9w" secondAttribute="bottom" constant="17" id="k1W-8N-cX1"/>
-                            <constraint firstItem="qSc-YU-X9w" firstAttribute="leading" secondItem="xii-MH-DPH" secondAttribute="leading" id="pAI-ja-XpS"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Fqq-Mo-lQm"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Seminar" id="T8c-ae-LK0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S34-gr-qK5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4720" y="118"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="8nC-69-T5H">
             <objects>
@@ -1729,6 +1628,5 @@
         <image name="ic_studInfo" width="512" height="420"/>
         <image name="ic_transcript" width="423" height="513"/>
         <image name="logo" width="297" height="300"/>
-        <image name="teacher" width="191" height="115"/>
     </resources>
 </document>
