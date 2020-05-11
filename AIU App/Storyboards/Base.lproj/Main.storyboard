@@ -1506,18 +1506,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cwh-j9-MvH">
                                 <rect key="frame" x="58.666666666666657" y="218" width="297" height="300"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-LB-QcN">
+                                <rect key="frame" x="20" y="565" width="374" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Login as a Guest"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="c6a-LB-QcN" firstAttribute="leading" secondItem="998-aI-jHb" secondAttribute="leading" constant="20" id="BBZ-8o-5Mi"/>
                             <constraint firstItem="Erb-FM-6uX" firstAttribute="leading" secondItem="998-aI-jHb" secondAttribute="leading" constant="12" id="BSP-5z-a1W"/>
                             <constraint firstItem="998-aI-jHb" firstAttribute="trailing" secondItem="Erb-FM-6uX" secondAttribute="trailing" constant="12" id="DbJ-E8-AkR"/>
                             <constraint firstItem="GZn-Kq-tPp" firstAttribute="leading" secondItem="998-aI-jHb" secondAttribute="leading" constant="48" id="EtK-AP-9f5"/>
                             <constraint firstItem="998-aI-jHb" firstAttribute="trailing" secondItem="GZn-Kq-tPp" secondAttribute="trailing" constant="48" id="MAx-vf-3Ii"/>
+                            <constraint firstItem="Erb-FM-6uX" firstAttribute="top" secondItem="c6a-LB-QcN" secondAttribute="bottom" constant="8" id="Pjc-Va-3eR"/>
                             <constraint firstItem="Cwh-j9-MvH" firstAttribute="centerY" secondItem="kYF-Na-OXr" secondAttribute="centerY" id="Wg4-WT-hN5"/>
                             <constraint firstItem="GZn-Kq-tPp" firstAttribute="top" secondItem="Cwh-j9-MvH" secondAttribute="bottom" constant="8" id="ZAm-EK-ckw"/>
                             <constraint firstItem="Cwh-j9-MvH" firstAttribute="centerX" secondItem="kYF-Na-OXr" secondAttribute="centerX" id="dU2-lh-hK9"/>
                             <constraint firstItem="998-aI-jHb" firstAttribute="bottom" secondItem="Erb-FM-6uX" secondAttribute="bottom" constant="30" id="mSv-Ez-B5d"/>
                             <constraint firstItem="Erb-FM-6uX" firstAttribute="centerX" secondItem="kYF-Na-OXr" secondAttribute="centerX" id="oHz-CM-Ppy"/>
+                            <constraint firstItem="998-aI-jHb" firstAttribute="trailing" secondItem="c6a-LB-QcN" secondAttribute="trailing" constant="20" id="uf1-Gf-SWz"/>
                             <constraint firstItem="Erb-FM-6uX" firstAttribute="top" secondItem="GZn-Kq-tPp" secondAttribute="bottom" constant="50" id="veN-1H-koU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="998-aI-jHb"/>
