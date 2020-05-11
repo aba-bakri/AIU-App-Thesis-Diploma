@@ -34,77 +34,102 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
-        
-        checkIfFieldEmpty()
-        signUp()
+        let error = validateFields()
+        if error != nil {
+            //There's something wrong with the fields, show error message
+            showError(error!)
+            DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+                self.errorLabel.isHidden = true
+            }
+        } else {
+            signUp()
+        }
     }
     
     func signUp() {
-        Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { (authResult, error) in
+        
+        //Create cleaned versions of the data
+        let firstName = firstNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let lastName = lastNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let email = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let studentId = studentIdField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let department = departmentField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let phone = phoneField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        //Create the user
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             guard let user = authResult?.user, error == nil else { return }
             
-            self.ref = Database.database().reference()
-            
-            let userObject = [
-                "firstName": self.firstNameField.text,
-                "lastName" : self.lastNameField.text,
-                "email" : self.emailField.text,
-                "studentId" : self.studentIdField.text,
-                "department" : self.departmentField.text,
-                "phone" : self.phoneField.text,
-            ]
-            
-            self.ref.child("User").child(user.uid).setValue(userObject)
-            
-            let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(identifier: "mainHome")
-            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: true)
+            //Check for errors
+            if error != nil {
+                // There was an error creating the user
+                self.showError("Error creating user")
+            } else {
+                
+                self.ref = Database.database().reference()
+                
+                let userObject = [
+                    "firstName": firstName,
+                    "lastName" : lastName,
+                    "email" : email,
+                    "studentId" : studentId,
+                    "department" : department,
+                    "phone" : phone,
+                ]
+                
+                //User was created successfuly, now store the fields
+                self.ref.child("User").child(user.uid).setValue(userObject)
+                
+                //Transition to the home screen
+                self.transitionToHome()
+            }
         }
     }
     
     
-    func checkIfFieldEmpty() {
+    func validateFields() -> String? {
         
-        if firstNameField.text!.isEmpty {
-            errorLabel.text = "Firstname can't be empty"
-            errorLabel.isHidden = false
-            return
+        //Check that all fields are filled in
+        if firstNameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in your firstname"
         }
-        
-        if lastNameField.text!.isEmpty {
-            errorLabel.text = "Lastname can't be empty"
-            errorLabel.isHidden = false
-            return
+        if lastNameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in your lastname"
         }
         
-        if studentIdField.text!.isEmpty {
-            errorLabel.text = "Student Id can't be empty"
-            errorLabel.isHidden = false
-            return
+        let cleanedEmail = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if Utilities.isEmailValid(cleanedEmail) == false {
+            return "Please make sure email is @iaau.edu.kg"
         }
         
-        if departmentField.text!.isEmpty {
-            errorLabel.text = "Department field can't be empty"
-            errorLabel.isHidden = false
-            return
+        if studentIdField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in your student id"
+        }
+        if departmentField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in your department"
+        }
+        if phoneField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in your phone"
         }
         
-        if phoneField.text!.isEmpty {
-            errorLabel.text = "Phone field can't be empty"
-            errorLabel.isHidden = false
-            return
+        //Check if the password is secure
+        let cleanedPassword = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            return "Please make sure your password is at least 8 characters, contains a special character and a number"
         }
         
-        if emailField.text!.isEmpty == true {
-            errorLabel.text = "Email address can't be empty"
-            errorLabel.isHidden = false
-            return
-        }
-        if passwordField.text!.isEmpty == true {
-            errorLabel.text = "Password can't be empty"
-            errorLabel.isHidden = false
-            return
-        }
+        return nil
+    }
+    
+    func showError(_ message: String) {
+        errorLabel.text = message
+        errorLabel.isHidden = false
+    }
+    
+    func transitionToHome() {
+        let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(identifier: "Home")
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

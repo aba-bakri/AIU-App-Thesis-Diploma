@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MenuTableViewController: UITableViewController {
     
@@ -14,5 +15,22 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func signOutCellTapped() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error)
+        }
+        
+        let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(identifier: "Firstcontroller")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        _ = UITableViewCell(style: .default, reuseIdentifier: "signOut")
+        signOutCellTapped()
     }
 }

@@ -12,9 +12,14 @@ class HomeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        tableView.backgroundColor = .white
+        
         navigationController?.navigationBar.tintColor = .black
-    }    
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_burger"), style: .plain, target: self, action: #selector(menuButtonTapped))
+    }
+    
+    @objc func menuButtonTapped() {
+        let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(identifier: "MenuTableViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

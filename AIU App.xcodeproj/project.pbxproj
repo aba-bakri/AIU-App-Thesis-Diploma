@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F016B4EC97288FE13A2C1E1 /* Pods_AIU_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB89172AF4F4D6898F947516 /* Pods_AIU_AppTests.framework */; };
 		5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */; };
+		52447DD224683E9900D0FFAD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52447DD124683E9900D0FFAD /* Utilities.swift */; };
 		525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BB23DC033800DDF2EB /* AppDelegate.swift */; };
 		525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BD23DC033800DDF2EB /* SceneDelegate.swift */; };
 		525004C023DC033800DDF2EB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BF23DC033800DDF2EB /* FirstViewController.swift */; };
@@ -54,6 +55,7 @@
 		17B5D4BDD90B32BAFC11FEE8 /* Pods-AIU AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU AppTests.release.xcconfig"; path = "Target Support Files/Pods-AIU AppTests/Pods-AIU AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App.release.xcconfig"; path = "Target Support Files/Pods-AIU App/Pods-AIU App.release.xcconfig"; sourceTree = "<group>"; };
 		5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGradesTableViewController.swift; sourceTree = "<group>"; };
+		52447DD124683E9900D0FFAD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		525004B823DC033800DDF2EB /* AIU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AIU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525004BB23DC033800DDF2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525004BD23DC033800DDF2EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
+		52447DD024683E8B00D0FFAD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52447DD124683E9900D0FFAD /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		525004AF23DC033800DDF2EB = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 		525004BA23DC033800DDF2EB /* AIU App */ = {
 			isa = PBXGroup;
 			children = (
+				52447DD024683E8B00D0FFAD /* Helpers */,
 				52B9205323E45E8000420E76 /* Delegates */,
 				52B9205123E45E5B00420E76 /* Controllers */,
 				52B9205223E45E6900420E76 /* Storyboards */,
@@ -487,6 +498,7 @@
 				525004C023DC033800DDF2EB /* FirstViewController.swift in Sources */,
 				525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */,
 				525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */,
+				52447DD224683E9900D0FFAD /* Utilities.swift in Sources */,
 				52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */,
 				52CA2AD1240CB6FF006888A6 /* SeminarViewController.swift in Sources */,
 				52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */,
