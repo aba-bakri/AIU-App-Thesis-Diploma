@@ -1409,6 +1409,9 @@
                                 <rect key="frame" x="20" y="565" width="374" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Login as a Guest"/>
+                                <connections>
+                                    <action selector="loginAsGuestButtonTapped:" destination="AqT-K7-A3z" eventType="touchUpInside" id="29s-VD-oGu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1434,6 +1437,7 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffb-0H-DPD" sceneMemberID="firstResponder"/>
+                <exit id="AqT-K7-A3z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="345" y="-628"/>
         </scene>
