@@ -7,14 +7,36 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class MenuTableViewController: UITableViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var surnameLabel: UILabel!
+    
+    @IBOutlet weak var studentIdLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        observeUserInformation()
+    }
+    
+    func observeUserInformation() {
+        let ref = Database.database().reference()
+        
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        ref.child("User").child(uid).observe(.value, with: { (snapshot) in
+            if let dict = snapshot.value as? [String: Any] {
+                self.nameLabel.text = dict["firstName"] as? String
+                self.surnameLabel.text = dict["lastName"] as? String
+                self.studentIdLabel.text = dict["studentId"] as? String
+            }
+        })
+
     }
     
 //    func signOutCellTapped() {

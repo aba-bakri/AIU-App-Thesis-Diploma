@@ -13,11 +13,65 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    var activeController: UIViewController!
+    var navigationController: UINavigationController!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+//        let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+//        Auth.auth().addStateDidChangeListener { (auth, user) in
+//            switch user {
+//            case nil:
+//                guard self.activeController is HomeTableViewController else { return }
+//                let firstViewController = storyboard.instantiateViewController(identifier: "FirstViewController") as! FirstViewController
+//                self.navigationController.setViewControllers([firstViewController], animated: false)
+//                self.navigationController.popToViewController(firstViewController, animated: true)
+//                self.activeController = firstViewController
+//            default:
+//                guard self.activeController is FirstViewController else { return }
+//                let homeViewController = storyboard.instantiateViewController(identifier: "Home") as! HomeTableViewController
+//                self.navigationController.setViewControllers([homeViewController], animated: false)
+//                self.navigationController.popToViewController(homeViewController, animated: true)
+//                self.activeController = homeViewController
+//            }
+//        }
+//
+//        let homeViewController = storyboard.instantiateViewController(identifier: "Home")
+//        let firstViewController = storyboard.instantiateViewController(identifier: "FirstViewController")
+//
+//        activeController = homeViewController
+//
+//        switch Auth.auth().currentUser != nil {
+//        case true:
+//            activeController = firstViewController
+//        default:
+//            break
+//        }
+//
+//        navigationController = UINavigationController.init(rootViewController: activeController)
+//        self.window?.rootViewController = navigationController
+//        self.window?.makeKeyAndVisible()
+        
+        let authListener = Auth.auth().addStateDidChangeListener { auth, user in
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            if user != nil {
+                //
+                let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeTableViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            } else {
+                // menu screen
+                let controller = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            }
+        }
+        
         return true
     }
 

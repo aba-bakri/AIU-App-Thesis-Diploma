@@ -19,8 +19,6 @@ class StudentInformationViewController: UIViewController {
     @IBOutlet weak var departmentLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     
-    let defaults = UserDefaults.standard
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
