@@ -45,8 +45,13 @@ class SignInViewController: UIViewController {
                     self?.errorLabel.isHidden = true
                 }
             } else {
-                if Auth.auth().currentUser != nil {
-                    self?.transitionToHome()
+                
+                if Auth.auth().currentUser?.email == "pmsaiuapp@gmail.com" {
+                    self?.transitionAdminToHome()
+                } else {
+                    if Auth.auth().currentUser != nil {
+                        self?.transitionToHome()
+                    }
                 }
             }
         }
@@ -56,6 +61,12 @@ class SignInViewController: UIViewController {
         let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: "Home")
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func transitionAdminToHome() {
+        let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(identifier: "AdminHome")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

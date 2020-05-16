@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F016B4EC97288FE13A2C1E1 /* Pods_AIU_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB89172AF4F4D6898F947516 /* Pods_AIU_AppTests.framework */; };
+		5203C13E246FB87A00DB7A24 /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203C13D246FB87A00DB7A24 /* UniversityViewController.swift */; };
 		5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */; };
 		52447DD224683E9900D0FFAD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52447DD124683E9900D0FFAD /* Utilities.swift */; };
 		525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BB23DC033800DDF2EB /* AppDelegate.swift */; };
@@ -27,6 +28,8 @@
 		52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A972CC23E95DD5005A185D /* ScheduleViewController.swift */; };
 		52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9204F23E45E5500420E76 /* MenuTableViewController.swift */; };
 		52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9205523E45EFC00420E76 /* HomeTableViewController.swift */; };
+		52D36BE0246C44C4000FE00A /* HomeGuestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D36BDF246C44C4000FE00A /* HomeGuestTableViewController.swift */; };
+		52D36BE2246C49DB000FE00A /* MenuGuestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D36BE1246C49DB000FE00A /* MenuGuestTableViewController.swift */; };
 		52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BD4823F296B6001CE15E /* ContactViewController.swift */; };
 		97EC6A051E38B2DBF51E6E0A /* Pods_AIU_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB54BA7C83CA628B544C208 /* Pods_AIU_App.framework */; };
 		C2D270967FAFF456891B8F25 /* Pods_AIU_App_AIU_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55367BB88CF8DCD3DACA69 /* Pods_AIU_App_AIU_AppUITests.framework */; };
@@ -53,6 +56,7 @@
 		1094FC5077552B5BA037B6B8 /* Pods-AIU AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU AppTests.debug.xcconfig"; path = "Target Support Files/Pods-AIU AppTests/Pods-AIU AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		17B5D4BDD90B32BAFC11FEE8 /* Pods-AIU AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU AppTests.release.xcconfig"; path = "Target Support Files/Pods-AIU AppTests/Pods-AIU AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App.release.xcconfig"; path = "Target Support Files/Pods-AIU App/Pods-AIU App.release.xcconfig"; sourceTree = "<group>"; };
+		5203C13D246FB87A00DB7A24 /* UniversityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
 		5217ED4B240BCE5A007710DB /* MyGradesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGradesTableViewController.swift; sourceTree = "<group>"; };
 		52447DD124683E9900D0FFAD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		525004B823DC033800DDF2EB /* AIU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AIU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,8 @@
 		52A972CC23E95DD5005A185D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		52B9204F23E45E5500420E76 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		52B9205523E45EFC00420E76 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		52D36BDF246C44C4000FE00A /* HomeGuestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGuestTableViewController.swift; sourceTree = "<group>"; };
+		52D36BE1246C49DB000FE00A /* MenuGuestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGuestTableViewController.swift; sourceTree = "<group>"; };
 		52F7BD4823F296B6001CE15E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		5A55367BB88CF8DCD3DACA69 /* Pods_AIU_App_AIU_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIU_App_AIU_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB54BA7C83CA628B544C208 /* Pods_AIU_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIU_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +164,8 @@
 		525004BA23DC033800DDF2EB /* AIU App */ = {
 			isa = PBXGroup;
 			children = (
+				52AA586A246FE5170041A5F6 /* Models */,
+				52AA586E246FE5EE0041A5F6 /* Services */,
 				52447DD024683E8B00D0FFAD /* Helpers */,
 				52B9205323E45E8000420E76 /* Delegates */,
 				52B9205123E45E5B00420E76 /* Controllers */,
@@ -188,12 +196,20 @@
 			path = "AIU AppUITests";
 			sourceTree = "<group>";
 		};
+		526536B3246DA00400055A91 /* AdminControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdminControllers;
+			sourceTree = "<group>";
+		};
 		526FA4772469CEC800B8C2A4 /* MenuControllers */ = {
 			isa = PBXGroup;
 			children = (
 				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
 				52A972CC23E95DD5005A185D /* ScheduleViewController.swift */,
 				52F7BD4823F296B6001CE15E /* ContactViewController.swift */,
+				5203C13D246FB87A00DB7A24 /* UniversityViewController.swift */,
 			);
 			path = MenuControllers;
 			sourceTree = "<group>";
@@ -210,14 +226,31 @@
 		526FA47A2469CF8000B8C2A4 /* GuestControllers */ = {
 			isa = PBXGroup;
 			children = (
+				52D36BDF246C44C4000FE00A /* HomeGuestTableViewController.swift */,
+				52D36BE1246C49DB000FE00A /* MenuGuestTableViewController.swift */,
 			);
 			path = GuestControllers;
+			sourceTree = "<group>";
+		};
+		52AA586A246FE5170041A5F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52AA586E246FE5EE0041A5F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		52B9205123E45E5B00420E76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				521F045024603A9F00E433A2 /* Authorization */,
+				526536B3246DA00400055A91 /* AdminControllers */,
 				526FA4782469CF0200B8C2A4 /* UserControllers */,
 				526FA47A2469CF8000B8C2A4 /* GuestControllers */,
 				526FA4772469CEC800B8C2A4 /* MenuControllers */,
@@ -521,6 +554,8 @@
 				525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */,
 				52447DD224683E9900D0FFAD /* Utilities.swift in Sources */,
 				52A972CD23E95DD5005A185D /* ScheduleViewController.swift in Sources */,
+				52D36BE2246C49DB000FE00A /* MenuGuestTableViewController.swift in Sources */,
+				52D36BE0246C44C4000FE00A /* HomeGuestTableViewController.swift in Sources */,
 				52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */,
 				52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */,
 				5217ED4C240BCE5A007710DB /* MyGradesTableViewController.swift in Sources */,
@@ -529,6 +564,7 @@
 				5297F67C240D0E7900D372F7 /* MailViewController.swift in Sources */,
 				525004C623DC033800DDF2EB /* AIU_App.xcdatamodeld in Sources */,
 				5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */,
+				5203C13E246FB87A00DB7A24 /* UniversityViewController.swift in Sources */,
 				52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
