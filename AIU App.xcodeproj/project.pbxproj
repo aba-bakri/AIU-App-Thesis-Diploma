@@ -10,6 +10,13 @@
 		3F016B4EC97288FE13A2C1E1 /* Pods_AIU_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB89172AF4F4D6898F947516 /* Pods_AIU_AppTests.framework */; };
 		5203C13E246FB87A00DB7A24 /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203C13D246FB87A00DB7A24 /* UniversityViewController.swift */; };
 		5219BE7E2470226200592AAD /* FacultiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BE7D2470226200592AAD /* FacultiesTableViewController.swift */; };
+		5219BE8024702A5800592AAD /* FacultiesSitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BE7F24702A5800592AAD /* FacultiesSitesViewController.swift */; };
+		522ECCBA24705B62002A0F6E /* NewTechTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCB924705B62002A0F6E /* NewTechTableViewController.swift */; };
+		522ECCBD24705DC7002A0F6E /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCBC24705DC7002A0F6E /* SocialTableViewController.swift */; };
+		522ECCBF24706026002A0F6E /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCBE24706026002A0F6E /* MedicineTableViewController.swift */; };
+		522ECCC1247060D0002A0F6E /* EconomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCC0247060D0002A0F6E /* EconomTableViewController.swift */; };
+		522ECCC3247060DB002A0F6E /* DistanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCC2247060DB002A0F6E /* DistanceTableViewController.swift */; };
+		522ECCC5247060E5002A0F6E /* LanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCC4247060E5002A0F6E /* LanguageTableViewController.swift */; };
 		52447DD224683E9900D0FFAD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52447DD124683E9900D0FFAD /* Utilities.swift */; };
 		525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BB23DC033800DDF2EB /* AppDelegate.swift */; };
 		525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004BD23DC033800DDF2EB /* SceneDelegate.swift */; };
@@ -57,6 +64,13 @@
 		3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App.release.xcconfig"; path = "Target Support Files/Pods-AIU App/Pods-AIU App.release.xcconfig"; sourceTree = "<group>"; };
 		5203C13D246FB87A00DB7A24 /* UniversityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
 		5219BE7D2470226200592AAD /* FacultiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultiesTableViewController.swift; sourceTree = "<group>"; };
+		5219BE7F24702A5800592AAD /* FacultiesSitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultiesSitesViewController.swift; sourceTree = "<group>"; };
+		522ECCB924705B62002A0F6E /* NewTechTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTechTableViewController.swift; sourceTree = "<group>"; };
+		522ECCBC24705DC7002A0F6E /* SocialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
+		522ECCBE24706026002A0F6E /* MedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
+		522ECCC0247060D0002A0F6E /* EconomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomTableViewController.swift; sourceTree = "<group>"; };
+		522ECCC2247060DB002A0F6E /* DistanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTableViewController.swift; sourceTree = "<group>"; };
+		522ECCC4247060E5002A0F6E /* LanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
 		52447DD124683E9900D0FFAD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		525004B823DC033800DDF2EB /* AIU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AIU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525004BB23DC033800DDF2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +143,67 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
+		522ECCB224705B15002A0F6E /* Faculties */ = {
+			isa = PBXGroup;
+			children = (
+				522ECCB824705B47002A0F6E /* Language */,
+				522ECCB724705B41002A0F6E /* Distance */,
+				522ECCB624705B3A002A0F6E /* Medicine */,
+				522ECCB524705B33002A0F6E /* Econom */,
+				522ECCB424705B2B002A0F6E /* Social */,
+				522ECCB324705B1E002A0F6E /* NewTech */,
+			);
+			path = Faculties;
+			sourceTree = "<group>";
+		};
+		522ECCB324705B1E002A0F6E /* NewTech */ = {
+			isa = PBXGroup;
+			children = (
+				522ECCB924705B62002A0F6E /* NewTechTableViewController.swift */,
+			);
+			path = NewTech;
+			sourceTree = "<group>";
+		};
+		522ECCB424705B2B002A0F6E /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				522ECCBC24705DC7002A0F6E /* SocialTableViewController.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		522ECCB524705B33002A0F6E /* Econom */ = {
+			isa = PBXGroup;
+			children = (
+				522ECCC0247060D0002A0F6E /* EconomTableViewController.swift */,
+			);
+			path = Econom;
+			sourceTree = "<group>";
+		};
+		522ECCB624705B3A002A0F6E /* Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				522ECCBE24706026002A0F6E /* MedicineTableViewController.swift */,
+			);
+			path = Medicine;
+			sourceTree = "<group>";
+		};
+		522ECCB724705B41002A0F6E /* Distance */ = {
+			isa = PBXGroup;
+			children = (
+				522ECCC2247060DB002A0F6E /* DistanceTableViewController.swift */,
+			);
+			path = Distance;
+			sourceTree = "<group>";
+		};
+		522ECCB824705B47002A0F6E /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				522ECCC4247060E5002A0F6E /* LanguageTableViewController.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 		52447DD024683E8B00D0FFAD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +237,7 @@
 		525004BA23DC033800DDF2EB /* AIU App */ = {
 			isa = PBXGroup;
 			children = (
+				522ECCB224705B15002A0F6E /* Faculties */,
 				52AA586A246FE5170041A5F6 /* Models */,
 				52AA586E246FE5EE0041A5F6 /* Services */,
 				52447DD024683E8B00D0FFAD /* Helpers */,
@@ -207,6 +283,7 @@
 				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
 				52F7BD4823F296B6001CE15E /* ContactViewController.swift */,
 				5203C13D246FB87A00DB7A24 /* UniversityViewController.swift */,
+				5219BE7D2470226200592AAD /* FacultiesTableViewController.swift */,
 			);
 			path = MenuControllers;
 			sourceTree = "<group>";
@@ -214,8 +291,8 @@
 		526FA4782469CF0200B8C2A4 /* UserControllers */ = {
 			isa = PBXGroup;
 			children = (
-				52B9204F23E45E5500420E76 /* MenuTableViewController.swift */,
 				52B9205523E45EFC00420E76 /* HomeTableViewController.swift */,
+				52B9204F23E45E5500420E76 /* MenuTableViewController.swift */,
 			);
 			path = UserControllers;
 			sourceTree = "<group>";
@@ -252,7 +329,7 @@
 				526FA47A2469CF8000B8C2A4 /* GuestControllers */,
 				526FA4772469CEC800B8C2A4 /* MenuControllers */,
 				5297F67B240D0E7900D372F7 /* MailViewController.swift */,
-				5219BE7D2470226200592AAD /* FacultiesTableViewController.swift */,
+				5219BE7F24702A5800592AAD /* FacultiesSitesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -546,9 +623,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522ECCC3247060DB002A0F6E /* DistanceTableViewController.swift in Sources */,
+				522ECCBD24705DC7002A0F6E /* SocialTableViewController.swift in Sources */,
+				522ECCBF24706026002A0F6E /* MedicineTableViewController.swift in Sources */,
 				525004C023DC033800DDF2EB /* FirstViewController.swift in Sources */,
+				5219BE8024702A5800592AAD /* FacultiesSitesViewController.swift in Sources */,
 				525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */,
 				525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */,
+				522ECCBA24705B62002A0F6E /* NewTechTableViewController.swift in Sources */,
 				52447DD224683E9900D0FFAD /* Utilities.swift in Sources */,
 				5219BE7E2470226200592AAD /* FacultiesTableViewController.swift in Sources */,
 				52D36BE2246C49DB000FE00A /* MenuGuestTableViewController.swift in Sources */,
@@ -556,10 +638,12 @@
 				52B9205623E45EFC00420E76 /* HomeTableViewController.swift in Sources */,
 				52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */,
 				528DB9842461420E00323E81 /* SignUpViewController.swift in Sources */,
+				522ECCC1247060D0002A0F6E /* EconomTableViewController.swift in Sources */,
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
 				5297F67C240D0E7900D372F7 /* MailViewController.swift in Sources */,
 				525004C623DC033800DDF2EB /* AIU_App.xcdatamodeld in Sources */,
 				5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */,
+				522ECCC5247060E5002A0F6E /* LanguageTableViewController.swift in Sources */,
 				5203C13E246FB87A00DB7A24 /* UniversityViewController.swift in Sources */,
 				52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */,
 			);
