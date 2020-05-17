@@ -39,20 +39,19 @@ class MenuTableViewController: UITableViewController {
 
     }
     
-//    func signOutCellTapped() {
-//        do {
-//            try Auth.auth().signOut()
-//        } catch {
-//            print(error)
-//        }
-//
-//        let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyBoard.instantiateViewController(identifier: "Firstcontroller")
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
+    func signOutCellTapped() {
+        do {
+            try Auth.auth().signOut()
+            self.dismiss(animated: true) {
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+        } catch {
+            print(error)
+        }
+    }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        _ = UITableViewCell(style: .default, reuseIdentifier: "signOut")
-//        signOutCellTapped()
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        _ = UITableViewCell(style: .default, reuseIdentifier: "signOut")
+        signOutCellTapped()
+    }
 }
