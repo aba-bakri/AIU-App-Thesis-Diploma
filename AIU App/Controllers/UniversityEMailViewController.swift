@@ -21,6 +21,7 @@ class UniversityEMailViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "University E-mail"
         // Do any additional setup after loading the view.
         
         let url = URL(string: "https://gmail.com")

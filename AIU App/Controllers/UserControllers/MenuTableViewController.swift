@@ -36,21 +36,4 @@ class MenuTableViewController: UITableViewController {
         })
 
     }
-    
-    func signOutCellTapped() {
-        do {
-            try Auth.auth().signOut()
-            self.dismiss(animated: true) {
-                self.navigationController?.popToRootViewController(animated: true)
-            }
-        } catch {
-            print(error)
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 10 {
-            signOutCellTapped()
-        }
-    }
 }

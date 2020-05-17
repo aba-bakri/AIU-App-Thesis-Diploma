@@ -116,33 +116,20 @@
             </objects>
             <point key="canvasLocation" x="1006" y="2213"/>
         </scene>
-        <!--Home Table View Controller-->
-        <scene sceneID="7uA-5W-OkO">
+        <!--Home View Controller-->
+        <scene sceneID="oC4-pJ-CnC">
             <objects>
-                <tableViewController storyboardIdentifier="Home" id="MMH-WG-tXs" customClass="HomeTableViewController" customModule="AIU_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Swi-xT-4NE">
+                <viewController storyboardIdentifier="Home" id="Z08-b4-O6d" customClass="HomeViewController" customModule="AIU_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9x-Hk-Hil">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="owj-5Y-xa9">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="owj-5Y-xa9" id="Vr5-dB-ATo">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="MMH-WG-tXs" id="vjP-It-KUz"/>
-                            <outlet property="delegate" destination="MMH-WG-tXs" id="53p-cw-Xtt"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A3r-j5-oXX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="nJZ-X5-L9W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvq-YB-F3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="818"/>
+            <point key="canvasLocation" x="64" y="841"/>
         </scene>
         <!--University Email View Controller-->
         <scene sceneID="YPS-TC-SCu">
@@ -493,39 +480,6 @@
                                         <connections>
                                             <segue destination="XYJ-98-pM3" kind="show" id="pkA-0k-zVG"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="signOut" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5XD-bd-7UF">
-                                        <rect key="frame" x="0.0" y="441" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5XD-bd-7UF" id="tDB-7T-ptc">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_signout" translatesAutoresizingMaskIntoConstraints="NO" id="D1u-cg-YoC">
-                                                    <rect key="frame" x="24" y="10" width="24" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="55R-Dv-rss"/>
-                                                        <constraint firstAttribute="height" constant="24" id="kcl-bw-uHc"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYf-nl-e2U">
-                                                    <rect key="frame" x="72" y="10.666666666666664" width="250" height="23"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ncI-uO-Gek"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="FYf-nl-e2U" firstAttribute="centerY" secondItem="tDB-7T-ptc" secondAttribute="centerY" id="7BN-Fb-xp4"/>
-                                                <constraint firstAttribute="trailing" secondItem="FYf-nl-e2U" secondAttribute="trailing" constant="92" id="bg8-V7-eHB"/>
-                                                <constraint firstItem="FYf-nl-e2U" firstAttribute="leading" secondItem="D1u-cg-YoC" secondAttribute="trailing" constant="24" id="eeD-66-JEY"/>
-                                                <constraint firstItem="D1u-cg-YoC" firstAttribute="leading" secondItem="tDB-7T-ptc" secondAttribute="leading" constant="24" id="hqZ-HF-rms"/>
-                                                <constraint firstItem="D1u-cg-YoC" firstAttribute="centerY" secondItem="tDB-7T-ptc" secondAttribute="centerY" id="obu-fm-LMB"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -878,7 +832,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysz-wb-SEq">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="eYR-Ej-Del"/>
                                                     </constraints>
@@ -911,7 +865,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics and Nanoelectronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IE-P6-srW">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ytX-Zc-Is7"/>
                                                     </constraints>
@@ -944,7 +898,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applied Mathematics &amp; Informatics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lW-t2-Cj1">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="44a-LV-cIo"/>
                                                     </constraints>
@@ -977,7 +931,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Industrial Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-Xk-CvI">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="QbB-nN-Zpd"/>
                                                     </constraints>
@@ -1034,7 +988,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Economics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS8-ar-yD8">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="YvO-a5-Pjl"/>
                                                     </constraints>
@@ -1067,7 +1021,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finance  &amp; Banking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71m-zX-rhI">
-                                                    <rect key="frame" x="72" y="11.666666666666664" width="334" height="21"/>
+                                                    <rect key="frame" x="72" y="11.666666666666664" width="294" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="mN4-8O-zuk"/>
                                                     </constraints>
@@ -1100,7 +1054,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="International Relations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFv-Y8-ePy">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="R68-P8-6Ig"/>
                                                     </constraints>
@@ -1133,7 +1087,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBm-uF-ddb">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Kqm-Gf-fBQ"/>
                                                     </constraints>
@@ -1166,7 +1120,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Law" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE1-Xj-isW">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="cxl-9P-BZ5"/>
                                                     </constraints>
@@ -1224,7 +1178,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kyrgyz Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE4-ro-KUC">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="zte-Nk-Zqg"/>
                                                     </constraints>
@@ -1257,7 +1211,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russian Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WR3-vZ-2SL">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="7am-vB-xRt"/>
                                                     </constraints>
@@ -1290,7 +1244,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turkish Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sis-b3-RzH">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="cCu-yN-YhD"/>
                                                     </constraints>
@@ -1323,7 +1277,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfJ-a1-V7G">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="iGf-4M-uaL"/>
                                                     </constraints>
@@ -1395,7 +1349,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foreign Philology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-E7-5hn">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="C7P-wm-uiD"/>
                                                     </constraints>
@@ -1428,7 +1382,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journalism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhQ-Sl-5nL">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="uR4-wC-URF"/>
                                                     </constraints>
@@ -1461,7 +1415,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedagogy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khq-y5-zxz">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="yhe-5b-b32"/>
                                                     </constraints>
@@ -1518,7 +1472,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Medicine - Pediatrics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-T9-hq6">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="soO-eB-3ag"/>
                                                     </constraints>
@@ -2287,7 +2241,6 @@
         <image name="ic_out" width="512" height="342"/>
         <image name="ic_profile" width="347" height="512"/>
         <image name="ic_qa" width="512" height="512"/>
-        <image name="ic_signout" width="512" height="512"/>
         <image name="ic_site" width="414" height="366"/>
         <image name="ic_social" width="488" height="480"/>
         <image name="ic_tech" width="480" height="480"/>
