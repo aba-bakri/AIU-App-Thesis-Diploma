@@ -1,23 +1,24 @@
 //
-//  HomeViewController.swift
+//  HomeGuestTableViewController.swift
 //  AIU App
 //
-//  Created by Aba-Bakri on 5/17/20.
+//  Created by Aba-Bakri on 5/13/20.
 //  Copyright © 2020 Ababakri Ibragimov. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeGuestViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var news = [News]()
     var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupBarButtons()
+        title = "News"
+        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.prefersLargeTitles = false
         
         tableView = UITableView(frame: view.bounds, style: .plain)
         let cellNib = UINib(nibName: "NewsTableViewCell", bundle: nil)
@@ -58,31 +59,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    func setupBarButtons() {
-        title = "News"
-        navigationController?.navigationBar.tintColor = .black
-        navigationController?.navigationBar.prefersLargeTitles = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_burger"), style: .plain, target: self, action: #selector(menuButtonTapped))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action: #selector(signOutButtonTapped))
-    }
-    
-    @objc func menuButtonTapped() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "MenuTableViewController")
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc func signOutButtonTapped() {
-        do {
-            try Auth.auth().signOut()
-            self.dismiss(animated: true) {
-                self.navigationController?.popToRootViewController(animated: true)
-            }
-        } catch {
-            print(error)
-        }
-    }
-
     func observeNews() {
         let newsRef = Database.database().reference().child("News")
         
@@ -108,4 +84,5 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.tableView.reloadData()
         }
     }
+
 }

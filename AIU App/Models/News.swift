@@ -11,14 +11,14 @@ import Foundation
 class News {
     var title: String
     var description: String
-    var image: String
+    var imageUrl: URL
     var location: String
     var date: String
     
-    init(title: String, description: String, image: String, location: String, date: String) {
+    init(title: String, description: String, imageUrl: URL, location: String, date: String) {
         self.title = title
         self.description = description
-        self.image = image
+        self.imageUrl = imageUrl
         self.location = location
         self.date = date
     }
