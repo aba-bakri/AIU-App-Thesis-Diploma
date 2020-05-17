@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class UniversityViewController: UIViewController, WKNavigationDelegate {
+class UniversitySiteViewController: UIViewController, WKNavigationDelegate {
 
     var webView: WKWebView!
     
@@ -22,6 +22,7 @@ class UniversityViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "University Site"
         // Do any additional setup after loading the view.
         
         let url = URL(string: "http://iaau.edu.kg")

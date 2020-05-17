@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class MailViewController: UIViewController, WKNavigationDelegate {
+class UniversityEMailViewController: UIViewController, WKNavigationDelegate {
 
     var webView: WKWebView!
     

@@ -18,7 +18,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     @objc func menuButtonTapped() {
-        let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: "MenuTableViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }

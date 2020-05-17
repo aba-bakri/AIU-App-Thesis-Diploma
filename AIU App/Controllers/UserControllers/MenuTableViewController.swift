@@ -19,8 +19,6 @@ class MenuTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         observeUserInformation()
     }
     
@@ -51,7 +49,8 @@ class MenuTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        _ = UITableViewCell(style: .default, reuseIdentifier: "signOut")
-        signOutCellTapped()
+        if indexPath.row == 10 {
+            signOutCellTapped()
+        }
     }
 }

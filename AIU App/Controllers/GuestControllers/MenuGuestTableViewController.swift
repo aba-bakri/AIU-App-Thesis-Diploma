@@ -14,5 +14,4 @@ class MenuGuestTableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
-
 }
