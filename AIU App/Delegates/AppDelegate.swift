@@ -14,29 +14,34 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var activeController: UIViewController!
-    var navigationController: UINavigationController!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-//        let authListener = Auth.auth().addStateDidChangeListener { auth, user in
-//            
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            
-//            if user != nil {
-//                //
-//                let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeTableViewController
-//                self.window?.rootViewController = controller
-//                self.window?.makeKeyAndVisible()
-//            } else {
-//                // menu screen
-//                let controller = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-//                self.window?.rootViewController = controller
-//                self.window?.makeKeyAndVisible()
-//            }
-//        }
+        let authListener = Auth.auth().addStateDidChangeListener { auth, user in
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+            if user != nil {
+
+                UserService.observeUserProfile(user!.uid) { (userProfile) in
+                    UserService.currentUserProfile = userProfile
+                }
+
+                let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+
+            } else {
+
+                UserService.currentUserProfile = nil
+
+                let controller = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            }
+        }
         
         return true
     }

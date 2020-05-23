@@ -22,19 +22,29 @@ class StudentInformationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
-        navigationController?.navigationBar.tintColor = .black
-        navigationController?.navigationBar.prefersLargeTitles = false
+        setupNavBar()
         
         observeUserInformation()
     }
     
+    func setupNavBar() {
+        title = "Student Information"
+        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(updateProfile))
+    }
+    
+    @objc func updateProfile() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(identifier: "UpdateProfileViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func observeUserInformation() {
         let ref = Database.database().reference()
-        
+//
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        
+//
         ref.child("User").child(uid).observe(.value, with: { (snapshot) in
             if let dict = snapshot.value as? [String: Any] {
                 self.nameLabel.text = dict["firstName"] as? String
@@ -45,6 +55,10 @@ class StudentInformationViewController: UIViewController {
                 self.phoneLabel.text = dict["phone"] as? String
             }
         })
+        
+        UserService.observeUserProfile(uid) { (userProfile) in
+            UserService.currentUserProfile = userProfile
+        }
 
     }
 

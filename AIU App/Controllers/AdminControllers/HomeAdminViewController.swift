@@ -1,15 +1,15 @@
 //
-//  HomeViewController.swift
+//  HomeAdminViewController.swift
 //  AIU App
 //
-//  Created by Aba-Bakri on 5/17/20.
+//  Created by Aba-Bakri on 5/18/20.
 //  Copyright © 2020 Ababakri Ibragimov. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var news = [News]()
     var tableView: UITableView!
@@ -18,7 +18,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         setupBarButtons()
-        
         tableView = UITableView(frame: view.bounds, style: .plain)
         let cellNib = UINib(nibName: "NewsTableViewCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "newsCell")
@@ -58,7 +57,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.setNews(news: news[indexPath.row])
         return cell
     }
-    
+
     func setupBarButtons() {
         title = "News"
         navigationController?.navigationBar.tintColor = .black
@@ -69,7 +68,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @objc func menuButtonTapped() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "MenuTableViewController")
+        let vc = storyBoard.instantiateViewController(identifier: "MenuAdminTableViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -83,7 +82,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             print(error)
         }
     }
-
+    
     func observeNews() {
         let newsRef = Database.database().reference().child("News")
         

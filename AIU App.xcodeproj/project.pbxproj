@@ -15,6 +15,7 @@
 		522A02D824718BAA004F3AD3 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522A02D624718BAA004F3AD3 /* NewsTableViewCell.xib */; };
 		522A02DA24718CD4004F3AD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A02D924718CD4004F3AD3 /* HomeViewController.swift */; };
 		522A02DC2471A7DB004F3AD3 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A02DB2471A7DB004F3AD3 /* ImageService.swift */; };
+		522A02DE2471C97C004F3AD3 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A02DD2471C97C004F3AD3 /* HomeAdminViewController.swift */; };
 		522ECCBA24705B62002A0F6E /* NewTechTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCB924705B62002A0F6E /* NewTechTableViewController.swift */; };
 		522ECCBD24705DC7002A0F6E /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCBC24705DC7002A0F6E /* SocialTableViewController.swift */; };
 		522ECCBF24706026002A0F6E /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCBE24706026002A0F6E /* MedicineTableViewController.swift */; };
@@ -31,14 +32,22 @@
 		525004CB23DC033800DDF2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525004C923DC033800DDF2EB /* LaunchScreen.storyboard */; };
 		525004D623DC033900DDF2EB /* AIU_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004D523DC033900DDF2EB /* AIU_AppTests.swift */; };
 		525004E123DC033900DDF2EB /* AIU_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525004E023DC033900DDF2EB /* AIU_AppUITests.swift */; };
+		525B780D247860E800CD4CA2 /* MenuAdminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B780C247860E800CD4CA2 /* MenuAdminTableViewController.swift */; };
+		525B780F2478D43200CD4CA2 /* AddNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B780E2478D43200CD4CA2 /* AddNewsViewController.swift */; };
+		525B78112479203B00CD4CA2 /* AllStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */; };
+		525B781424796A4900CD4CA2 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B781224796A4900CD4CA2 /* StudentTableViewCell.swift */; };
+		525B781524796A4900CD4CA2 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */; };
 		5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA323DC211B0070BC17 /* SignInViewController.swift */; };
 		5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */; };
 		528DB98224612C7800323E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528DB98124612C7800323E81 /* GoogleService-Info.plist */; };
 		528DB9842461420E00323E81 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DB9832461420E00323E81 /* SignUpViewController.swift */; };
 		5297F67C240D0E7900D372F7 /* UniversityEMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297F67B240D0E7900D372F7 /* UniversityEMailViewController.swift */; };
 		52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9204F23E45E5500420E76 /* MenuTableViewController.swift */; };
+		52C822E42475BC7600C814AB /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */; };
 		52D36BE0246C44C4000FE00A /* HomeGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D36BDF246C44C4000FE00A /* HomeGuestViewController.swift */; };
 		52D36BE2246C49DB000FE00A /* MenuGuestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D36BE1246C49DB000FE00A /* MenuGuestTableViewController.swift */; };
+		52E08FD62476DB2A00A5F1D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E08FD52476DB2A00A5F1D7 /* User.swift */; };
+		52E08FD82476DBA900A5F1D7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E08FD72476DBA900A5F1D7 /* UserService.swift */; };
 		52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7BD4823F296B6001CE15E /* ContactViewController.swift */; };
 		86E334168441AD06CBB5C214 /* Pods_AIU_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D229AA6A2BFC50963D2488 /* Pods_AIU_AppTests.framework */; };
 		8A31017BC5A8A7135021574A /* Pods_AIU_App_AIU_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC22491BDCBCADB8FF66126 /* Pods_AIU_App_AIU_AppUITests.framework */; };
@@ -74,6 +83,7 @@
 		522A02D624718BAA004F3AD3 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		522A02D924718CD4004F3AD3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		522A02DB2471A7DB004F3AD3 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		522A02DD2471C97C004F3AD3 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
 		522ECCB924705B62002A0F6E /* NewTechTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTechTableViewController.swift; sourceTree = "<group>"; };
 		522ECCBC24705DC7002A0F6E /* SocialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
 		522ECCBE24706026002A0F6E /* MedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
@@ -96,14 +106,22 @@
 		525004DC23DC033900DDF2EB /* AIU AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AIU AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525004E023DC033900DDF2EB /* AIU_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIU_AppUITests.swift; sourceTree = "<group>"; };
 		525004E223DC033900DDF2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525B780C247860E800CD4CA2 /* MenuAdminTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAdminTableViewController.swift; sourceTree = "<group>"; };
+		525B780E2478D43200CD4CA2 /* AddNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewsViewController.swift; sourceTree = "<group>"; };
+		525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStudentsViewController.swift; sourceTree = "<group>"; };
+		525B781224796A4900CD4CA2 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 		5270EEA323DC211B0070BC17 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformationViewController.swift; sourceTree = "<group>"; };
 		528DB98124612C7800323E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		528DB9832461420E00323E81 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5297F67B240D0E7900D372F7 /* UniversityEMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEMailViewController.swift; sourceTree = "<group>"; };
 		52B9204F23E45E5500420E76 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		52D36BDF246C44C4000FE00A /* HomeGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGuestViewController.swift; sourceTree = "<group>"; };
 		52D36BE1246C49DB000FE00A /* MenuGuestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGuestTableViewController.swift; sourceTree = "<group>"; };
+		52E08FD52476DB2A00A5F1D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52E08FD72476DBA900A5F1D7 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		52F7BD4823F296B6001CE15E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		6D78F8C9BD9E7E0E6CE82D56 /* Pods-AIU App-AIU AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App-AIU AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-AIU App-AIU AppUITests/Pods-AIU App-AIU AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90D229AA6A2BFC50963D2488 /* Pods_AIU_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIU_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +227,8 @@
 				52447DD124683E9900D0FFAD /* Utilities.swift */,
 				522A02D524718BAA004F3AD3 /* NewsTableViewCell.swift */,
 				522A02D624718BAA004F3AD3 /* NewsTableViewCell.xib */,
+				525B781224796A4900CD4CA2 /* StudentTableViewCell.swift */,
+				525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -274,6 +294,10 @@
 		526536B3246DA00400055A91 /* AdminControllers */ = {
 			isa = PBXGroup;
 			children = (
+				522A02DD2471C97C004F3AD3 /* HomeAdminViewController.swift */,
+				525B780C247860E800CD4CA2 /* MenuAdminTableViewController.swift */,
+				525B780E2478D43200CD4CA2 /* AddNewsViewController.swift */,
+				525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */,
 			);
 			path = AdminControllers;
 			sourceTree = "<group>";
@@ -294,6 +318,7 @@
 			children = (
 				522A02D924718CD4004F3AD3 /* HomeViewController.swift */,
 				52B9204F23E45E5500420E76 /* MenuTableViewController.swift */,
+				52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */,
 			);
 			path = UserControllers;
 			sourceTree = "<group>";
@@ -311,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				522A02CF247153D8004F3AD3 /* News.swift */,
+				52E08FD52476DB2A00A5F1D7 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				522A02DB2471A7DB004F3AD3 /* ImageService.swift */,
+				52E08FD72476DBA900A5F1D7 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -501,6 +528,7 @@
 				525004C823DC033800DDF2EB /* Assets.xcassets in Resources */,
 				525004C323DC033800DDF2EB /* Main.storyboard in Resources */,
 				522A02D824718BAA004F3AD3 /* NewsTableViewCell.xib in Resources */,
+				525B781524796A4900CD4CA2 /* StudentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,15 +661,20 @@
 				525004C023DC033800DDF2EB /* FirstViewController.swift in Sources */,
 				5219BE8024702A5800592AAD /* FacultiesSitesViewController.swift in Sources */,
 				525004BC23DC033800DDF2EB /* AppDelegate.swift in Sources */,
+				525B78112479203B00CD4CA2 /* AllStudentsViewController.swift in Sources */,
 				525004BE23DC033800DDF2EB /* SceneDelegate.swift in Sources */,
 				522ECCBA24705B62002A0F6E /* NewTechTableViewController.swift in Sources */,
 				52447DD224683E9900D0FFAD /* Utilities.swift in Sources */,
+				525B780D247860E800CD4CA2 /* MenuAdminTableViewController.swift in Sources */,
+				52E08FD62476DB2A00A5F1D7 /* User.swift in Sources */,
 				5219BE7E2470226200592AAD /* FacultiesTableViewController.swift in Sources */,
 				52D36BE2246C49DB000FE00A /* MenuGuestTableViewController.swift in Sources */,
+				525B781424796A4900CD4CA2 /* StudentTableViewCell.swift in Sources */,
 				52D36BE0246C44C4000FE00A /* HomeGuestViewController.swift in Sources */,
 				522A02DA24718CD4004F3AD3 /* HomeViewController.swift in Sources */,
 				52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */,
 				528DB9842461420E00323E81 /* SignUpViewController.swift in Sources */,
+				522A02DE2471C97C004F3AD3 /* HomeAdminViewController.swift in Sources */,
 				522ECCC1247060D0002A0F6E /* EconomTableViewController.swift in Sources */,
 				522ECCC92470697D002A0F6E /* DepartmentsViewController.swift in Sources */,
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
@@ -652,6 +685,9 @@
 				522A02DC2471A7DB004F3AD3 /* ImageService.swift in Sources */,
 				522ECCC5247060E5002A0F6E /* LanguageTableViewController.swift in Sources */,
 				522A02D724718BAA004F3AD3 /* NewsTableViewCell.swift in Sources */,
+				525B780F2478D43200CD4CA2 /* AddNewsViewController.swift in Sources */,
+				52E08FD82476DBA900A5F1D7 /* UserService.swift in Sources */,
+				52C822E42475BC7600C814AB /* UpdateProfileViewController.swift in Sources */,
 				5203C13E246FB87A00DB7A24 /* UniversitySiteViewController.swift in Sources */,
 				52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */,
 			);
@@ -827,6 +863,7 @@
 			baseConfigurationReference = EFA0C35F962C80241E335FC5 /* Pods-AIU App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K7RDBSH2X;
 				INFOPLIST_FILE = "AIU App/Info.plist";
@@ -836,6 +873,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AIU-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -846,6 +884,7 @@
 			baseConfigurationReference = 3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K7RDBSH2X;
 				INFOPLIST_FILE = "AIU App/Info.plist";
@@ -855,6 +894,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AIU-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

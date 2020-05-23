@@ -24,6 +24,7 @@ class HomeGuestViewController: UIViewController, UITableViewDelegate, UITableVie
         let cellNib = UINib(nibName: "NewsTableViewCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "newsCell")
         tableView.tableFooterView = UIView()
+        tableView.backgroundColor = UIColor(red: 242/255, green: 242/255, blue: 247/255, alpha: 1)
         view.addSubview(tableView)
         
         var layoutGuide: UILayoutGuide!

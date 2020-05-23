@@ -65,7 +65,7 @@ class SignInViewController: UIViewController {
     
     func transitionAdminToHome() {
         let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "AdminHome")
+        let vc = storyBoard.instantiateViewController(identifier: "adminHome") as! HomeAdminViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
