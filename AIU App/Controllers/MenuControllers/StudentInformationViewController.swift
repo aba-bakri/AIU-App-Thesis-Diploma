@@ -31,7 +31,7 @@ class StudentInformationViewController: UIViewController {
         title = "Student Information"
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.prefersLargeTitles = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(updateProfile))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(updateProfile))
     }
     
     @objc func updateProfile() {

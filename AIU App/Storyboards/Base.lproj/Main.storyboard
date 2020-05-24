@@ -200,7 +200,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="JQe-H2-ksG">
-                                                    <rect key="frame" x="24" y="10" width="24.000000000000057" height="24"/>
+                                                    <rect key="frame" x="24" y="10" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="Js1-BB-tR2"/>
                                                         <constraint firstAttribute="width" constant="24" id="qfS-84-DrA"/>
@@ -556,14 +556,8 @@
                                     <action selector="signUpButtonTapped:" destination="RiJ-9v-AI2" eventType="touchUpInside" id="oe9-Ci-3Ev"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ma-c0-3Sy">
-                                <rect key="frame" x="20" y="324" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GPt-ky-dBt" firstAttribute="top" secondItem="tst-Kq-sDY" secondAttribute="bottom" constant="8" id="2Fz-GG-Kg2"/>
                             <constraint firstItem="GnF-Qc-vkS" firstAttribute="trailing" secondItem="JAT-yG-4f6" secondAttribute="trailing" constant="20" id="37n-GA-oG9"/>
@@ -584,10 +578,8 @@
                             <constraint firstItem="sm3-bQ-OZp" firstAttribute="top" secondItem="EvN-5e-Q1U" secondAttribute="bottom" constant="8" id="URk-6I-OHw"/>
                             <constraint firstItem="hwy-ag-YU7" firstAttribute="leading" secondItem="GnF-Qc-vkS" secondAttribute="leading" constant="12" id="Vpw-t7-vlc"/>
                             <constraint firstItem="EvN-5e-Q1U" firstAttribute="top" secondItem="GPt-ky-dBt" secondAttribute="bottom" constant="8" id="Vsn-5q-VV2"/>
-                            <constraint firstItem="7Ma-c0-3Sy" firstAttribute="top" secondItem="sm3-bQ-OZp" secondAttribute="bottom" constant="20" id="WdP-1k-il9"/>
                             <constraint firstItem="GnF-Qc-vkS" firstAttribute="trailing" secondItem="hwy-ag-YU7" secondAttribute="trailing" constant="12" id="Yl8-5K-XdQ"/>
                             <constraint firstItem="Lxu-gr-AGz" firstAttribute="top" secondItem="aP5-cZ-Gbg" secondAttribute="bottom" constant="8" id="ceg-PX-RSz"/>
-                            <constraint firstItem="7Ma-c0-3Sy" firstAttribute="leading" secondItem="GnF-Qc-vkS" secondAttribute="leading" constant="20" id="hg6-xG-Tcq"/>
                             <constraint firstItem="EvN-5e-Q1U" firstAttribute="top" secondItem="GPt-ky-dBt" secondAttribute="bottom" constant="8" id="jyV-wV-n5N"/>
                             <constraint firstItem="GnF-Qc-vkS" firstAttribute="bottom" secondItem="hwy-ag-YU7" secondAttribute="bottom" constant="30" id="kQc-S2-kWB"/>
                             <constraint firstItem="GnF-Qc-vkS" firstAttribute="trailing" secondItem="aP5-cZ-Gbg" secondAttribute="trailing" constant="20" id="lN0-pM-o1Q"/>
@@ -595,7 +587,6 @@
                             <constraint firstItem="0Ej-Hg-MeT" firstAttribute="top" secondItem="JAT-yG-4f6" secondAttribute="bottom" constant="8" id="pLh-vq-Kjz"/>
                             <constraint firstItem="Lxu-gr-AGz" firstAttribute="leading" secondItem="GnF-Qc-vkS" secondAttribute="leading" constant="20" id="rNM-pN-UQS"/>
                             <constraint firstItem="GnF-Qc-vkS" firstAttribute="trailing" secondItem="Lxu-gr-AGz" secondAttribute="trailing" constant="20" id="uPi-th-JcZ"/>
-                            <constraint firstItem="GnF-Qc-vkS" firstAttribute="trailing" secondItem="7Ma-c0-3Sy" secondAttribute="trailing" constant="20" id="uj2-8I-13o"/>
                             <constraint firstItem="0Ej-Hg-MeT" firstAttribute="leading" secondItem="GnF-Qc-vkS" secondAttribute="leading" constant="20" id="w1F-VZ-VrG"/>
                             <constraint firstItem="GPt-ky-dBt" firstAttribute="leading" secondItem="GnF-Qc-vkS" secondAttribute="leading" constant="20" id="xOY-3x-TAL"/>
                         </constraints>
@@ -603,7 +594,6 @@
                     </view>
                     <connections>
                         <outlet property="departmentField" destination="GPt-ky-dBt" id="Kkb-68-Fu3"/>
-                        <outlet property="errorLabel" destination="7Ma-c0-3Sy" id="Pd2-Qz-OvD"/>
                         <outlet property="firstNameField" destination="Lxu-gr-AGz" id="z4p-YA-dE9"/>
                         <outlet property="lastNameField" destination="0Ej-Hg-MeT" id="9b3-3z-sC9"/>
                         <outlet property="phoneField" destination="sm3-bQ-OZp" id="gxM-CS-1lS"/>
@@ -723,7 +713,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engineering and Informatics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsm-w9-Q2u">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="334" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="jKA-cz-gqv"/>
                                                     </constraints>
@@ -759,7 +749,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Sciences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A96-QS-ll8">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="334" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="jfp-wr-oyP"/>
                                                     </constraints>
@@ -804,7 +794,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Economics and Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTd-d2-tYt">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="334" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="M9K-fh-tvC"/>
                                                     </constraints>
@@ -840,7 +830,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmh-Ay-YoQ">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="334" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="URf-Xa-cc4"/>
                                                     </constraints>
@@ -885,7 +875,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Institute of Languages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZt-oc-ank">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="334" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="334" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="hMN-3D-Fld"/>
                                                     </constraints>
@@ -945,7 +935,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Science" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysz-wb-SEq">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="eYR-Ej-Del"/>
                                                     </constraints>
@@ -978,7 +968,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics and Nanoelectronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IE-P6-srW">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ytX-Zc-Is7"/>
                                                     </constraints>
@@ -1011,7 +1001,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applied Mathematics &amp; Informatics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lW-t2-Cj1">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="44a-LV-cIo"/>
                                                     </constraints>
@@ -1044,7 +1034,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Industrial Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-Xk-CvI">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="QbB-nN-Zpd"/>
                                                     </constraints>
@@ -1101,7 +1091,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Economics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS8-ar-yD8">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="YvO-a5-Pjl"/>
                                                     </constraints>
@@ -1167,7 +1157,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="International Relations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFv-Y8-ePy">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="R68-P8-6Ig"/>
                                                     </constraints>
@@ -1200,7 +1190,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBm-uF-ddb">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Kqm-Gf-fBQ"/>
                                                     </constraints>
@@ -1233,7 +1223,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Law" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE1-Xj-isW">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="cxl-9P-BZ5"/>
                                                     </constraints>
@@ -1291,7 +1281,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kyrgyz Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE4-ro-KUC">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="zte-Nk-Zqg"/>
                                                     </constraints>
@@ -1324,7 +1314,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russian Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WR3-vZ-2SL">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="7am-vB-xRt"/>
                                                     </constraints>
@@ -1357,7 +1347,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turkish Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sis-b3-RzH">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="cCu-yN-YhD"/>
                                                     </constraints>
@@ -1390,7 +1380,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English Language Teaching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfJ-a1-V7G">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="iGf-4M-uaL"/>
                                                     </constraints>
@@ -1462,7 +1452,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foreign Philology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-E7-5hn">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="C7P-wm-uiD"/>
                                                     </constraints>
@@ -1495,7 +1485,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journalism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhQ-Sl-5nL">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="uR4-wC-URF"/>
                                                     </constraints>
@@ -1528,7 +1518,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedagogy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khq-y5-zxz">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="yhe-5b-b32"/>
                                                     </constraints>
@@ -1585,7 +1575,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Medicine - Pediatrics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-T9-hq6">
-                                                    <rect key="frame" x="72" y="11.999999999999998" width="294" height="20.333333333333329"/>
+                                                    <rect key="frame" x="72" y="12" width="294" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="soO-eB-3ag"/>
                                                     </constraints>
@@ -2100,8 +2090,17 @@
                         <sections>
                             <tableViewSection id="pl7-9k-Jyn">
                                 <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="15" id="Z2h-Yw-lhI">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="15"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z2h-Yw-lhI" id="vBV-mo-KhJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="S0s-Et-BLn">
-                                        <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="103" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S0s-Et-BLn" id="tgN-Hs-Vbz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -2138,7 +2137,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dLL-SL-sJA">
-                                        <rect key="frame" x="0.0" y="132" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="147" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLL-SL-sJA" id="KAb-zE-3is">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -2171,7 +2170,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Xvr-YG-0ew">
-                                        <rect key="frame" x="0.0" y="176" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="191" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xvr-YG-0ew" id="Gx5-db-Lg5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -2234,6 +2233,129 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wv-O0-NbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2938" y="33"/>
+        </scene>
+        <!--Admin Student Information View Controller-->
+        <scene sceneID="yYj-gh-cAV">
+            <objects>
+                <viewController storyboardIdentifier="AdminStudentsInformationViewController" id="O26-rR-7e7" customClass="AdminStudentInformationViewController" customModule="AIU_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nsy-qg-6Ex">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="oxj-Pb-vm8">
+                                <rect key="frame" x="132" y="24" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VTr-qa-jyZ"/>
+                                    <constraint firstAttribute="width" constant="150" id="hxf-f8-qlK"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="LkW-G9-kqj">
+                                <rect key="frame" x="8" y="206" width="91.333333333333329" height="276"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUB-6P-Cmc">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-YM-gnf">
+                                        <rect key="frame" x="0.0" y="51.333333333333314" width="91.333333333333329" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuy-Nw-zo1">
+                                        <rect key="frame" x="0.0" y="102.66666666666669" width="91.333333333333329" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-iZ-Kyj">
+                                        <rect key="frame" x="0.0" y="154" width="91.333333333333329" height="19.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSa-74-YgV">
+                                        <rect key="frame" x="0.0" y="205.33333333333331" width="91.333333333333329" height="19.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vh-IL-Sj9">
+                                        <rect key="frame" x="0.0" y="256.66666666666669" width="91.333333333333329" height="19.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="K9d-eT-gHO">
+                                <rect key="frame" x="109.33333333333334" y="206" width="296.66666666666663" height="276"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpS-kV-LxQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMG-cY-Zpa">
+                                        <rect key="frame" x="0.0" y="51.333333333333314" width="65" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name.surname@iaau.edu.kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J5-cp-RGu">
+                                        <rect key="frame" x="0.0" y="102.66666666666669" width="207.66666666666666" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bos-9c-2oY">
+                                        <rect key="frame" x="0.0" y="154" width="75" height="19.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cK-Gy-cLD">
+                                        <rect key="frame" x="0.0" y="205.33333333333331" width="87" height="19.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsm-yE-YI9">
+                                        <rect key="frame" x="0.0" y="256.66666666666669" width="108.66666666666667" height="19.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oxj-Pb-vm8" firstAttribute="top" secondItem="wZZ-kF-MAb" secondAttribute="top" constant="24" id="GgE-xG-nah"/>
+                            <constraint firstItem="LkW-G9-kqj" firstAttribute="top" secondItem="oxj-Pb-vm8" secondAttribute="bottom" constant="32" id="K4G-8x-NE8"/>
+                            <constraint firstItem="K9d-eT-gHO" firstAttribute="top" secondItem="oxj-Pb-vm8" secondAttribute="bottom" constant="32" id="Tnu-RJ-Q84"/>
+                            <constraint firstItem="oxj-Pb-vm8" firstAttribute="centerX" secondItem="Nsy-qg-6Ex" secondAttribute="centerX" id="XVQ-gz-tkX"/>
+                            <constraint firstItem="K9d-eT-gHO" firstAttribute="leading" secondItem="LkW-G9-kqj" secondAttribute="trailing" constant="10" id="aJz-3U-e22"/>
+                            <constraint firstItem="wZZ-kF-MAb" firstAttribute="trailing" secondItem="K9d-eT-gHO" secondAttribute="trailing" constant="8" id="aNk-AT-3If"/>
+                            <constraint firstItem="LkW-G9-kqj" firstAttribute="leading" secondItem="wZZ-kF-MAb" secondAttribute="leading" constant="8" id="c9a-CN-bWb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wZZ-kF-MAb"/>
+                    </view>
+                    <connections>
+                        <outlet property="departmentLabel" destination="2cK-Gy-cLD" id="FMF-8f-V48"/>
+                        <outlet property="emailLabel" destination="8J5-cp-RGu" id="MI1-2n-qk3"/>
+                        <outlet property="firstNameLabel" destination="vpS-kV-LxQ" id="0pk-zf-AFB"/>
+                        <outlet property="lastNameLabel" destination="bMG-cY-Zpa" id="v5U-qf-Rf6"/>
+                        <outlet property="phoneLabel" destination="Nsm-yE-YI9" id="wN5-jU-vot"/>
+                        <outlet property="studentIdLabel" destination="Bos-9c-2oY" id="ZbT-Fs-B70"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyC-p6-GNH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="33"/>
         </scene>
         <!--Add News View Controller-->
         <scene sceneID="rfd-B4-Id3">

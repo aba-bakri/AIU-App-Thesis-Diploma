@@ -42,6 +42,7 @@
 		528DB98224612C7800323E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528DB98124612C7800323E81 /* GoogleService-Info.plist */; };
 		528DB9842461420E00323E81 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DB9832461420E00323E81 /* SignUpViewController.swift */; };
 		5297F67C240D0E7900D372F7 /* UniversityEMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297F67B240D0E7900D372F7 /* UniversityEMailViewController.swift */; };
+		52AA4143247A8D1100969765 /* AdminStudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA4142247A8D1100969765 /* AdminStudentInformationViewController.swift */; };
 		52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9204F23E45E5500420E76 /* MenuTableViewController.swift */; };
 		52C822E42475BC7600C814AB /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */; };
 		52D36BE0246C44C4000FE00A /* HomeGuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D36BDF246C44C4000FE00A /* HomeGuestViewController.swift */; };
@@ -116,6 +117,7 @@
 		528DB98124612C7800323E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		528DB9832461420E00323E81 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5297F67B240D0E7900D372F7 /* UniversityEMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEMailViewController.swift; sourceTree = "<group>"; };
+		52AA4142247A8D1100969765 /* AdminStudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminStudentInformationViewController.swift; sourceTree = "<group>"; };
 		52B9204F23E45E5500420E76 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		52D36BDF246C44C4000FE00A /* HomeGuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGuestViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				525B780C247860E800CD4CA2 /* MenuAdminTableViewController.swift */,
 				525B780E2478D43200CD4CA2 /* AddNewsViewController.swift */,
 				525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */,
+				52AA4142247A8D1100969765 /* AdminStudentInformationViewController.swift */,
 			);
 			path = AdminControllers;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				522ECCC1247060D0002A0F6E /* EconomTableViewController.swift in Sources */,
 				522ECCC92470697D002A0F6E /* DepartmentsViewController.swift in Sources */,
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
+				52AA4143247A8D1100969765 /* AdminStudentInformationViewController.swift in Sources */,
 				5297F67C240D0E7900D372F7 /* UniversityEMailViewController.swift in Sources */,
 				522A02D0247153D8004F3AD3 /* News.swift in Sources */,
 				525004C623DC033800DDF2EB /* AIU_App.xcdatamodeld in Sources */,

@@ -20,13 +20,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orz-o7-vSr">
-                                <rect key="frame" x="16" y="11.5" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHf-DF-ybE">
-                                <rect key="frame" x="77" y="11.5" width="69" height="21"/>
+                                <rect key="frame" x="16" y="11.5" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cHu-wK-tHB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,15 +34,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHf-DF-ybE">
+                                <rect key="frame" x="124" y="11.5" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="RId-hQ-Qc1" firstAttribute="centerY" secondItem="eXa-JS-31t" secondAttribute="centerY" id="2Te-Xo-l5B"/>
-                            <constraint firstItem="xHf-DF-ybE" firstAttribute="leading" secondItem="Orz-o7-vSr" secondAttribute="trailing" constant="16" id="8UC-1p-CLd"/>
+                            <constraint firstItem="xHf-DF-ybE" firstAttribute="centerY" secondItem="eXa-JS-31t" secondAttribute="centerY" id="AS4-yH-Smr"/>
+                            <constraint firstItem="xHf-DF-ybE" firstAttribute="leading" secondItem="Orz-o7-vSr" secondAttribute="trailing" constant="8" id="Giv-R2-jAr"/>
                             <constraint firstAttribute="trailing" secondItem="RId-hQ-Qc1" secondAttribute="trailing" constant="16" id="O9K-HP-vCG"/>
-                            <constraint firstItem="xHf-DF-ybE" firstAttribute="centerY" secondItem="eXa-JS-31t" secondAttribute="centerY" id="khd-cJ-jny"/>
-                            <constraint firstItem="Orz-o7-vSr" firstAttribute="centerY" secondItem="eXa-JS-31t" secondAttribute="centerY" id="v2z-Kn-7ZB"/>
-                            <constraint firstItem="Orz-o7-vSr" firstAttribute="leading" secondItem="eXa-JS-31t" secondAttribute="leading" constant="16" id="yeA-D6-sdw"/>
+                            <constraint firstItem="Orz-o7-vSr" firstAttribute="leading" secondItem="eXa-JS-31t" secondAttribute="leading" constant="16" id="aye-A8-jTk"/>
+                            <constraint firstItem="Orz-o7-vSr" firstAttribute="centerY" secondItem="eXa-JS-31t" secondAttribute="centerY" id="xaK-WN-QaH"/>
                         </constraints>
                     </view>
                 </subviews>
