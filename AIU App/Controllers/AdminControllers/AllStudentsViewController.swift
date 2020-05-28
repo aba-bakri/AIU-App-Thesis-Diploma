@@ -57,13 +57,77 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath) as! StudentTableViewCell
         cell.setStudent(user: users[indexPath.row])
+        addNavBar()
         return cell
+    }
+    
+    func addNavBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(filterUsers))
+    }
+    
+    @objc func filterUsers() {
+        let alertController = UIAlertController(title: "Filter All Students", message: nil, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "Filter by Firstname A-Z", style: .default, handler: { (_) in
+            
+            let alert = UIAlertController(title: "Filter Firstname", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "From A-Z", style: .default, handler: { (_) in
+                self.users.sort { (first, second) -> Bool in
+                    return first.firstName < second.firstName
+                }
+                self.tableView.reloadData()
+            }))
+            alert.addAction(UIAlertAction(title: "From Z-A", style: .default, handler: { (_) in
+                self.users.sort { (first, second) -> Bool in
+                    return first.firstName > second.firstName
+                }
+                self.tableView.reloadData()
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }))
+        alertController.addAction(UIAlertAction(title: "Filter by Lastname A-Z", style: .default, handler: { (_) in
+            let alert = UIAlertController(title: "Filter Lastname", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "From A-Z", style: .default, handler: { (_) in
+                self.users.sort { (first, second) -> Bool in
+                    return first.lastName < second.lastName
+                }
+                self.tableView.reloadData()
+            }))
+            alert.addAction(UIAlertAction(title: "From Z-A", style: .default, handler: { (_) in
+                self.users.sort { (first, second) -> Bool in
+                    return first.lastName > second.lastName
+                }
+                self.tableView.reloadData()
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }))
+        alertController.addAction(UIAlertAction(title: "Filter by Department A-Z", style: .default, handler: { (_) in
+            let alert = UIAlertController(title: "Filter Department", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "From A-Z", style: .default, handler: { (_) in
+                self.users.sort { (first, second) -> Bool in
+                    return first.department < second.department
+                }
+                self.tableView.reloadData()
+            }))
+            alert.addAction(UIAlertAction(title: "From Z-A", style: .default, handler: { (_) in
+                self.users.sort { (first, second) -> Bool in
+                    return first.department > second.department
+                }
+                self.tableView.reloadData()
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        present(alertController, animated: true, completion: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "AdminStudentsInformationViewController") as? AdminStudentInformationViewController
-//        vc.firstNameLabel!.text = users[indexPath.row].firstName
         vc?.firstNameText = users[indexPath.row].firstName
         vc?.lastNameText = users[indexPath.row].lastName
         vc?.emailText = users[indexPath.row].email
@@ -96,9 +160,6 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
                     }
                 }
             self.users = tempUsers
-//            self.users.sort { (first, second) -> Bool in
-//                return first.firstName < second.firstName
-//            }
             self.tableView.reloadData()
         }
     }
