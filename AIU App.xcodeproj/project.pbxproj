@@ -115,6 +115,7 @@
 		525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStudentsViewController.swift; sourceTree = "<group>"; };
 		525B781224796A4900CD4CA2 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
+		526ED8822482892000DA9332 /* AIU App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AIU App.entitlements"; sourceTree = "<group>"; };
 		526FD2A12480DEE8006200B7 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		5270EEA323DC211B0070BC17 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformationViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +267,7 @@
 		525004BA23DC033800DDF2EB /* AIU App */ = {
 			isa = PBXGroup;
 			children = (
+				526ED8822482892000DA9332 /* AIU App.entitlements */,
 				522ECCB224705B15002A0F6E /* Faculties */,
 				52AA586A246FE5170041A5F6 /* Models */,
 				52AA586E246FE5EE0041A5F6 /* Services */,
@@ -887,9 +889,10 @@
 			baseConfigurationReference = EFA0C35F962C80241E335FC5 /* Pods-AIU App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AIU App/AIU App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9K7RDBSH2X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AIU App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -908,9 +911,10 @@
 			baseConfigurationReference = 3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AIU App/AIU App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9K7RDBSH2X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AIU App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
