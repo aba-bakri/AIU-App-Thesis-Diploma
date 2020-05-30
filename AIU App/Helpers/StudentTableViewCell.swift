@@ -17,6 +17,8 @@ class StudentTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+//        selectionStyle = .default
+        accessoryType = .detailDisclosureButton
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

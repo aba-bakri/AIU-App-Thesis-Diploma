@@ -57,6 +57,17 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.setNews(news: news[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "NewsDetailViewController") as? NewsDetailViewController
+        vc?.titleText = news[indexPath.row].title
+        vc?.locationText = news[indexPath.row].location
+        vc?.dateText = news[indexPath.row].date
+        vc?.descriptionText = news[indexPath.row].description
+        vc?.detailImageView = UIImage(named: "news")
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 
     func setupBarButtons() {
         title = "News"

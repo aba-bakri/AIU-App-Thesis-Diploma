@@ -10,11 +10,30 @@ import Firebase
 
 class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var users = [User]()
+    private var users = [User]()
     var tableView: UITableView!
+    private var searchedUsers = [User]()
+    
+    private var searchBarIsEmpty: Bool {
+        guard let text = searchController.searchBar.text else { return false }
+        return text.isEmpty
+    }
+    
+    private var isSearching: Bool {
+        return searchController.isActive && !searchBarIsEmpty
+    }
+    
+    let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Setup the search controller
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
         
         configureTableView()
         observeUsers()
@@ -51,12 +70,26 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isSearching {
+            return searchedUsers.count
+        }
+        
         return users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath) as! StudentTableViewCell
-        cell.setStudent(user: users[indexPath.row])
+        
+        var user: User
+        
+        if isSearching {
+            user = searchedUsers[indexPath.row]
+        } else {
+            user = users[indexPath.row]
+        }
+        
+        cell.setStudent(user: user)
+        cell.selectionStyle = .default
         addNavBar()
         return cell
     }
@@ -126,6 +159,7 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "AdminStudentsInformationViewController") as? AdminStudentInformationViewController
         vc?.firstNameText = users[indexPath.row].firstName
@@ -160,7 +194,24 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
                     }
                 }
             self.users = tempUsers
+            self.users.sort { (first, second) -> Bool in
+                return first.firstName < second.firstName
+            }
             self.tableView.reloadData()
         }
+    }
+}
+
+extension AllStudentsViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        searchedContextForSeachText(searchController.searchBar.text!)
+    }
+    
+    private func searchedContextForSeachText(_ searchText: String) {
+        searchedUsers = users.filter({ (user: User) -> Bool in
+            return user.firstName.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
     }
 }

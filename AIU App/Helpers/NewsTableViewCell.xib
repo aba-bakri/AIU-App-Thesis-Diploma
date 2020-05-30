@@ -19,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-g3-Mfh">
                         <rect key="frame" x="8" y="8" width="300" height="300"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6c-1z-RNs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6c-1z-RNs">
                                 <rect key="frame" x="8" y="7.9999999999999982" width="284" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -37,8 +37,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Ex-SYA">
-                                <rect key="frame" x="8" y="60" width="284" height="205"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Ex-SYA">
+                                <rect key="frame" x="8" y="36.333333333333329" width="284" height="228.66666666666669"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.14901960780000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
@@ -46,10 +46,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ef7-Ex-SYA" secondAttribute="trailing" constant="8" id="0jh-4G-Cqb"/>
                             <constraint firstItem="t6c-1z-RNs" firstAttribute="top" secondItem="P5J-g3-Mfh" secondAttribute="top" constant="8" id="3Lg-cX-fdZ"/>
-                            <constraint firstItem="ef7-Ex-SYA" firstAttribute="top" secondItem="P5J-g3-Mfh" secondAttribute="top" constant="60" id="53s-9g-ehi"/>
-                            <constraint firstAttribute="bottom" secondItem="ef7-Ex-SYA" secondAttribute="bottom" constant="35" id="GAX-bl-qI6"/>
                             <constraint firstAttribute="trailing" secondItem="7po-5R-NBJ" secondAttribute="trailing" constant="8" id="NdO-KR-5ss"/>
                             <constraint firstAttribute="width" constant="300" id="OMr-eA-xdM"/>
+                            <constraint firstItem="ef7-Ex-SYA" firstAttribute="top" secondItem="t6c-1z-RNs" secondAttribute="bottom" constant="8" id="Plw-WD-En4"/>
                             <constraint firstItem="ef7-Ex-SYA" firstAttribute="leading" secondItem="P5J-g3-Mfh" secondAttribute="leading" constant="8" id="UJK-Ae-Y8c"/>
                             <constraint firstItem="t6c-1z-RNs" firstAttribute="leading" secondItem="P5J-g3-Mfh" secondAttribute="leading" constant="8" id="bbW-56-Qgt"/>
                             <constraint firstAttribute="bottom" secondItem="7po-5R-NBJ" secondAttribute="bottom" constant="8" id="iKT-xB-ulH"/>
@@ -57,6 +56,7 @@
                             <constraint firstAttribute="bottom" secondItem="SeS-xa-QeU" secondAttribute="bottom" constant="8" id="lkr-Nf-YmB"/>
                             <constraint firstAttribute="height" constant="300" id="sFi-HZ-UDy"/>
                             <constraint firstItem="SeS-xa-QeU" firstAttribute="leading" secondItem="P5J-g3-Mfh" secondAttribute="leading" constant="8" id="z08-ia-JqK"/>
+                            <constraint firstItem="SeS-xa-QeU" firstAttribute="top" secondItem="ef7-Ex-SYA" secondAttribute="bottom" constant="6" id="zkf-13-eWB"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -85,7 +85,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="111.68478260869566"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="news" width="1680" height="840"/>
-    </resources>
 </document>

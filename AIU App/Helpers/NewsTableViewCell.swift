@@ -27,9 +27,12 @@ class NewsTableViewCell: UITableViewCell {
     }
     
     func setNews(news: News) {
-        //ImageService.getImage(withURL: news.imageUrl) { image in
-          //  self.newsImage.image = image
-        //}
+//        ImageService.getImage(withURL: news.imageUrl) { image in
+//            self.newsImage.image = image
+//        }
+//        ImageService.downloadImage(withURL: news.imageUrl) { (image) in
+//            self.newsImage.image = image
+//        }
         titleLabel.text = news.title
         locationLabel.text = news.location
         timeLabel.text = news.date
