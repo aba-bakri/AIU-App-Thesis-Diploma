@@ -37,6 +37,7 @@
 		525B78112479203B00CD4CA2 /* AllStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */; };
 		525B781424796A4900CD4CA2 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B781224796A4900CD4CA2 /* StudentTableViewCell.swift */; };
 		525B781524796A4900CD4CA2 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */; };
+		5267F63924842FCB00B14DF5 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267F63824842FCB00B14DF5 /* ForgotPasswordViewController.swift */; };
 		526FD2A22480DEE8006200B7 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FD2A12480DEE8006200B7 /* NewsDetailViewController.swift */; };
 		5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA323DC211B0070BC17 /* SignInViewController.swift */; };
 		5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */; };
@@ -115,6 +116,7 @@
 		525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStudentsViewController.swift; sourceTree = "<group>"; };
 		525B781224796A4900CD4CA2 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
+		5267F63824842FCB00B14DF5 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		526ED8822482892000DA9332 /* AIU App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AIU App.entitlements"; sourceTree = "<group>"; };
 		526FD2A12480DEE8006200B7 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		5270EEA323DC211B0070BC17 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				525004BF23DC033800DDF2EB /* FirstViewController.swift */,
 				5270EEA323DC211B0070BC17 /* SignInViewController.swift */,
 				528DB9832461420E00323E81 /* SignUpViewController.swift */,
+				5267F63824842FCB00B14DF5 /* ForgotPasswordViewController.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -701,6 +704,7 @@
 				522ECCC1247060D0002A0F6E /* EconomTableViewController.swift in Sources */,
 				522ECCC92470697D002A0F6E /* DepartmentsViewController.swift in Sources */,
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
+				5267F63924842FCB00B14DF5 /* ForgotPasswordViewController.swift in Sources */,
 				52AA4143247A8D1100969765 /* AdminStudentInformationViewController.swift in Sources */,
 				52A5E9E224822C7F00BA02C6 /* NewsService.swift in Sources */,
 				5297F67C240D0E7900D372F7 /* UniversityEMailViewController.swift in Sources */,

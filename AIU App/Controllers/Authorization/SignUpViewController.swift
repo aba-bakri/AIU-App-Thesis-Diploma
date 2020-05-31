@@ -109,8 +109,14 @@ class SignUpViewController: UIViewController {
         if departmentField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please fill in your department"
         }
+        if departmentField.text!.count < 6 || departmentField.text!.count > 6 {
+            return "Please fill in department field correctly"
+        }
         if phoneField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please fill in your phone"
+        }
+        if phoneField.text!.count < 10 || phoneField.text!.count > 10 {
+            return "Please fill in phone number field correctly"
         }
         
         //Check if the password is secure

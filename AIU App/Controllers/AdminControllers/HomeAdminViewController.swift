@@ -106,7 +106,7 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_burger"), style: .plain, target: self, action: #selector(menuButtonTapped))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action: #selector(signOutButtonTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "logout"), style: .plain, target: self, action: #selector(signOutButtonTapped))
     }
     
     @objc func menuButtonTapped() {

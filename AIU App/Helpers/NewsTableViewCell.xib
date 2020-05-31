@@ -20,7 +20,7 @@
                         <rect key="frame" x="8" y="8" width="300" height="300"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6c-1z-RNs">
-                                <rect key="frame" x="8" y="7.9999999999999982" width="284" height="20.333333333333329"/>
+                                <rect key="frame" x="8" y="8" width="284" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,8 +37,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Ex-SYA">
-                                <rect key="frame" x="8" y="36.333333333333329" width="284" height="228.66666666666669"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Ex-SYA">
+                                <rect key="frame" x="8" y="16" width="284" height="249"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.14901960780000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
@@ -85,4 +85,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="111.68478260869566"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="news" width="1680" height="840"/>
+    </resources>
 </document>

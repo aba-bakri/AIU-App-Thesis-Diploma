@@ -11,20 +11,20 @@ import Firebase
 
 class AddNewsViewController: UIViewController {
     
-    
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var locationField: UITextField!
     @IBOutlet weak var timeField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addImageButton: UIButton!
-        
+    
+    private var datePicker: UIDatePicker?
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        datePickerCreating()
 //
 //        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
 //        imageView.isUserInteractionEnabled = true
@@ -36,6 +36,26 @@ class AddNewsViewController: UIViewController {
 //        imagePicker.allowsEditing = true
 //        imagePicker.sourceType = .photoLibrary
 //        imagePicker.delegate = self
+    }
+    
+    func datePickerCreating() {
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .date
+        datePicker?.addTarget(self, action: #selector(dateChanged(datePicker: )), for: .valueChanged)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGesture)
+        timeField.inputView = datePicker
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        timeField.text = dateFormatter.string(from: datePicker.date)
     }
 
 //    @objc func openImagePicker(_ sender:Any) {
