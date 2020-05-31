@@ -11,11 +11,29 @@ import Firebase
 
 class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var news = [News]()
+    private var news = [News]()
     var tableView: UITableView!
+    private var searchedNews = [News]()
+    
+    private var searchBarIsEmpty: Bool {
+        guard let text = searchController.searchBar.text else { return false }
+        return text.isEmpty
+    }
+    
+    private var isSearching: Bool {
+        return searchController.isActive && !searchBarIsEmpty
+    }
+    
+    let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search by Title"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
         
         setupBarButtons()
         tableView = UITableView(frame: view.bounds, style: .plain)
@@ -49,12 +67,26 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isSearching {
+            return searchedNews.count
+        }
+        
         return news.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
-        cell.setNews(news: news[indexPath.row])
+        
+        var newss: News
+        
+        if isSearching {
+            newss = searchedNews[indexPath.row]
+        } else {
+            newss = news[indexPath.row]
+        }
+        
+        cell.setNews(news: newss)
+        cell.selectionStyle = .default
         return cell
     }
     
@@ -118,5 +150,19 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
             self.news = tempNews
             self.tableView.reloadData()
         }
+    }
+}
+
+extension HomeAdminViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        searchedContextForSeachText(searchController.searchBar.text!)
+    }
+    
+    private func searchedContextForSeachText(_ searchText: String) {
+        searchedNews = news.filter({ (news: News) -> Bool in
+            return news.title.lowercased().contains(searchText.lowercased()) || news.location.lowercased().contains(searchText.lowercased()) || news.date.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
     }
 }

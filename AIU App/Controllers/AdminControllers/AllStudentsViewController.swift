@@ -31,7 +31,7 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
         //Setup the search controller
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search"
+        searchController.searchBar.placeholder = "Search by Firstname"
         navigationItem.searchController = searchController
         definesPresentationContext = true
         
@@ -209,7 +209,7 @@ extension AllStudentsViewController: UISearchResultsUpdating {
     
     private func searchedContextForSeachText(_ searchText: String) {
         searchedUsers = users.filter({ (user: User) -> Bool in
-            return user.firstName.lowercased().contains(searchText.lowercased())
+            return user.firstName.lowercased().contains(searchText.lowercased()) || user.lastName.lowercased().contains(searchText.lowercased()) || user.department.lowercased().contains(searchText.lowercased())
         })
         
         tableView.reloadData()
