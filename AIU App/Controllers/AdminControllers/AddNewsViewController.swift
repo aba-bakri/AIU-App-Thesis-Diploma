@@ -80,7 +80,7 @@ class AddNewsViewController: UIViewController {
             "location" : location,
             "time" : time,
             "description" : description,
-            "image" : ""
+            "image" : "https://firebasestorage.googleapis.com/v0/b/pmsaiu-1b655.appspot.com/o/news%2FSCIENTIFIC%20WEBINAR%20ON%20EMERGING%20VIRAL%20INFECTIONS%3A?alt=media&token=d26621d1-7efb-430e-96c2-bf478bf058cf"
         ]
         
         newsRef.setValue(newsObject) { (error, ref) in

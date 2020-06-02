@@ -36,6 +36,7 @@ class NewsTableViewCell: UITableViewCell {
         titleLabel.text = news.title
         locationLabel.text = news.location
         timeLabel.text = news.date
+        newsImage.image = UIImage(named: "news")
     }
     
 }

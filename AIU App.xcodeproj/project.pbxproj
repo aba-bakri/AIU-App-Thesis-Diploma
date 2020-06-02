@@ -43,9 +43,12 @@
 		5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */; };
 		528DB98224612C7800323E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528DB98124612C7800323E81 /* GoogleService-Info.plist */; };
 		528DB9842461420E00323E81 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DB9832461420E00323E81 /* SignUpViewController.swift */; };
+		529031DF248644F400FC46F4 /* AlaTooInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529031DE248644F400FC46F4 /* AlaTooInformationViewController.swift */; };
 		5297F67C240D0E7900D372F7 /* UniversityEMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297F67B240D0E7900D372F7 /* UniversityEMailViewController.swift */; };
 		52A5E9E02482123E00BA02C6 /* NewsUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5E9DF2482123E00BA02C6 /* NewsUpdateViewController.swift */; };
 		52A5E9E224822C7F00BA02C6 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5E9E124822C7F00BA02C6 /* NewsService.swift */; };
+		52A961B02486491F003B12A8 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A961AF2486491F003B12A8 /* ActivitiesViewController.swift */; };
+		52A961B224864A76003B12A8 /* AllActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A961B124864A76003B12A8 /* AllActivitiesTableViewController.swift */; };
 		52AA4143247A8D1100969765 /* AdminStudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA4142247A8D1100969765 /* AdminStudentInformationViewController.swift */; };
 		52B9205023E45E5500420E76 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9204F23E45E5500420E76 /* MenuTableViewController.swift */; };
 		52C822E42475BC7600C814AB /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */; };
@@ -123,9 +126,12 @@
 		5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformationViewController.swift; sourceTree = "<group>"; };
 		528DB98124612C7800323E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		528DB9832461420E00323E81 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		529031DE248644F400FC46F4 /* AlaTooInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaTooInformationViewController.swift; sourceTree = "<group>"; };
 		5297F67B240D0E7900D372F7 /* UniversityEMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEMailViewController.swift; sourceTree = "<group>"; };
 		52A5E9DF2482123E00BA02C6 /* NewsUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUpdateViewController.swift; sourceTree = "<group>"; };
 		52A5E9E124822C7F00BA02C6 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		52A961AF2486491F003B12A8 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		52A961B124864A76003B12A8 /* AllActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllActivitiesTableViewController.swift; sourceTree = "<group>"; };
 		52AA4142247A8D1100969765 /* AdminStudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminStudentInformationViewController.swift; sourceTree = "<group>"; };
 		52B9204F23E45E5500420E76 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
@@ -312,6 +318,7 @@
 				525B780E2478D43200CD4CA2 /* AddNewsViewController.swift */,
 				525B78102479203B00CD4CA2 /* AllStudentsViewController.swift */,
 				52AA4142247A8D1100969765 /* AdminStudentInformationViewController.swift */,
+				52A5E9DF2482123E00BA02C6 /* NewsUpdateViewController.swift */,
 			);
 			path = AdminControllers;
 			sourceTree = "<group>";
@@ -319,7 +326,6 @@
 		526FA4772469CEC800B8C2A4 /* MenuControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
 				52F7BD4823F296B6001CE15E /* ContactViewController.swift */,
 				5203C13D246FB87A00DB7A24 /* UniversitySiteViewController.swift */,
 				5219BE7D2470226200592AAD /* FacultiesTableViewController.swift */,
@@ -332,6 +338,7 @@
 			children = (
 				522A02D924718CD4004F3AD3 /* HomeViewController.swift */,
 				52B9204F23E45E5500420E76 /* MenuTableViewController.swift */,
+				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
 				52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */,
 			);
 			path = UserControllers;
@@ -342,6 +349,9 @@
 			children = (
 				52D36BDF246C44C4000FE00A /* HomeGuestViewController.swift */,
 				52D36BE1246C49DB000FE00A /* MenuGuestTableViewController.swift */,
+				529031DE248644F400FC46F4 /* AlaTooInformationViewController.swift */,
+				52A961AF2486491F003B12A8 /* ActivitiesViewController.swift */,
+				52A961B124864A76003B12A8 /* AllActivitiesTableViewController.swift */,
 			);
 			path = GuestControllers;
 			sourceTree = "<group>";
@@ -353,7 +363,6 @@
 				526FD2A12480DEE8006200B7 /* NewsDetailViewController.swift */,
 				522ECCC82470697D002A0F6E /* DepartmentsViewController.swift */,
 				5219BE7F24702A5800592AAD /* FacultiesSitesViewController.swift */,
-				52A5E9DF2482123E00BA02C6 /* NewsUpdateViewController.swift */,
 			);
 			path = GeneralControllers;
 			sourceTree = "<group>";
@@ -682,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				522ECCBD24705DC7002A0F6E /* SocialTableViewController.swift in Sources */,
+				52A961B02486491F003B12A8 /* ActivitiesViewController.swift in Sources */,
 				522ECCBF24706026002A0F6E /* MedicineTableViewController.swift in Sources */,
 				525004C023DC033800DDF2EB /* FirstViewController.swift in Sources */,
 				5219BE8024702A5800592AAD /* FacultiesSitesViewController.swift in Sources */,
@@ -718,7 +728,9 @@
 				525B780F2478D43200CD4CA2 /* AddNewsViewController.swift in Sources */,
 				52E08FD82476DBA900A5F1D7 /* UserService.swift in Sources */,
 				52C822E42475BC7600C814AB /* UpdateProfileViewController.swift in Sources */,
+				529031DF248644F400FC46F4 /* AlaTooInformationViewController.swift in Sources */,
 				5203C13E246FB87A00DB7A24 /* UniversitySiteViewController.swift in Sources */,
+				52A961B224864A76003B12A8 /* AllActivitiesTableViewController.swift in Sources */,
 				52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

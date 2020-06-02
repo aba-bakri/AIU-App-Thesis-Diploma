@@ -22,6 +22,8 @@ class NewsUpdateViewController: UIViewController {
         super.viewDidLoad()
         setupNavBar()
         observeNewsInformation()
+//        debugPrint("Debug__\(Auth.auth().currentUser?.uid)")
+        debugPrint("Debug__\(Database.database().reference().child("News").childByAutoId().key)")
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
@@ -43,8 +45,6 @@ class NewsUpdateViewController: UIViewController {
         let description = descriptionTextView.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         let newsRef = Database.database().reference().child("News").child(Auth.auth().currentUser!.uid)
-        
-        debugPrint("Debug__\(Database.database().reference().child("News").child(Auth.auth().currentUser!.uid))")
         
         let newsObject = [
             "title": title,

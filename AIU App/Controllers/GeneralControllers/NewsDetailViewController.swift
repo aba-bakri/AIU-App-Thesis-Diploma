@@ -29,7 +29,6 @@ class NewsDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         title = dateText
-        navigationItem.backBarButtonItem?.title = "Back"
         setNewsDetailInformation()
         checkAdmin()
     }
