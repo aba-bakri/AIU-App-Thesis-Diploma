@@ -66,9 +66,7 @@ class SignUpViewController: UIViewController {
                 // There was an error creating the user
                 self.showError("Error creating user")
             } else {
-                
                 self.ref = Database.database().reference()
-                
                 let userObject = [
                     "firstName": firstName,
                     "lastName" : lastName,
@@ -81,8 +79,13 @@ class SignUpViewController: UIViewController {
                 //User was created successfuly, now store the fields
                 self.ref.child("User").child(user.uid).setValue(userObject)
                 
-                //Transition to the home screen
-                self.transitionToHome()
+                user.sendEmailVerification(completion: nil)
+                
+                let alertController = UIAlertController(title: nil, message: "Check your email", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
+                    self.navigationController?.popViewController(animated: true)
+                }))
+                self.present(alertController, animated: true, completion: nil)
             }
         }
     }
@@ -131,11 +134,5 @@ class SignUpViewController: UIViewController {
     func showError(_ message: String) {
         errorLabel.text = message
         errorLabel.isHidden = false
-    }
-    
-    func transitionToHome() {
-        let storyBoard =  UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "Home")
-        navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -49,8 +49,15 @@ class SignInViewController: UIViewController {
                 if Auth.auth().currentUser?.email == "pmsaiuapp@gmail.com" {
                     self?.transitionAdminToHome()
                 } else {
-                    if Auth.auth().currentUser != nil {
-                        self?.transitionToHome()
+                    
+                    if Auth.auth().currentUser?.isEmailVerified == true {
+                        if Auth.auth().currentUser != nil {
+                            self?.transitionToHome()
+                        }
+                    } else {
+                        let alertController = UIAlertController(title: nil, message: "Verify your email", preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                        self!.present(alertController, animated: true, completion: nil)
                     }
                 }
             }
