@@ -13,6 +13,7 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
     private var users = [User]()
     var tableView: UITableView!
     private var searchedUsers = [User]()
+    private var keyArray: [String] = []
     
     private var searchBarIsEmpty: Bool {
         guard let text = searchController.searchBar.text else { return false }
@@ -24,6 +25,8 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     let searchController = UISearchController(searchResultsController: nil)
+    
+    let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,6 +95,29 @@ class AllStudentsViewController: UIViewController, UITableViewDelegate, UITableV
         cell.selectionStyle = .default
         addNavBar()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            getAllKeys()
+            let when = DispatchTime.now() + 1
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.ref.child("User").child(self.keyArray[indexPath.row]).removeValue()
+                self.users.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                self.keyArray = []
+            }
+        }
+    }
+    
+    func getAllKeys() {
+        ref.child("User").observeSingleEvent(of: .value) { (snapshot) in
+            for child in snapshot.children {
+                let snap = child as! DataSnapshot
+                let key = snap.key
+                self.keyArray.append(key)
+            }
+        }
     }
     
     func addNavBar() {
