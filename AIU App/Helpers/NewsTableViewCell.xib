@@ -17,10 +17,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-g3-Mfh">
-                        <rect key="frame" x="8" y="8" width="300" height="250"/>
+                        <rect key="frame" x="8" y="8" width="300" height="200"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Ex-SYA">
-                                <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
@@ -35,13 +35,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeS-xa-QeU">
-                                <rect key="frame" x="215.33333333333334" y="213" width="68.666666666666657" height="21"/>
+                                <rect key="frame" x="215.33333333333334" y="163" width="68.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7po-5R-NBJ">
-                                <rect key="frame" x="15.999999999999996" y="213" width="39.666666666666657" height="21"/>
+                                <rect key="frame" x="15.999999999999996" y="163" width="39.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -59,7 +59,7 @@
                             <constraint firstItem="ef7-Ex-SYA" firstAttribute="top" secondItem="P5J-g3-Mfh" secondAttribute="top" id="dWs-WF-drE"/>
                             <constraint firstItem="t6c-1z-RNs" firstAttribute="top" secondItem="P5J-g3-Mfh" secondAttribute="top" constant="16" id="lzy-W1-T9w"/>
                             <constraint firstItem="7po-5R-NBJ" firstAttribute="leading" secondItem="P5J-g3-Mfh" secondAttribute="leading" constant="16" id="mbD-CU-IoY"/>
-                            <constraint firstAttribute="height" constant="250" id="sFi-HZ-UDy"/>
+                            <constraint firstAttribute="height" constant="200" id="sFi-HZ-UDy"/>
                             <constraint firstItem="ef7-Ex-SYA" firstAttribute="leading" secondItem="P5J-g3-Mfh" secondAttribute="leading" id="tky-j3-Dsy"/>
                             <constraint firstAttribute="bottom" secondItem="SeS-xa-QeU" secondAttribute="bottom" constant="16" id="tvK-8i-drU"/>
                         </constraints>

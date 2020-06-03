@@ -41,6 +41,7 @@
 		525B781524796A4900CD4CA2 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */; };
 		5267F63924842FCB00B14DF5 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5267F63824842FCB00B14DF5 /* ForgotPasswordViewController.swift */; };
 		526FD2A22480DEE8006200B7 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FD2A12480DEE8006200B7 /* NewsDetailViewController.swift */; };
+		5270DF122487DC9300FC372E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270DF112487DC9300FC372E /* ChangePasswordViewController.swift */; };
 		5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA323DC211B0070BC17 /* SignInViewController.swift */; };
 		5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */; };
 		528DB98224612C7800323E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528DB98124612C7800323E81 /* GoogleService-Info.plist */; };
@@ -126,6 +127,7 @@
 		5267F63824842FCB00B14DF5 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		526ED8822482892000DA9332 /* AIU App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AIU App.entitlements"; sourceTree = "<group>"; };
 		526FD2A12480DEE8006200B7 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		5270DF112487DC9300FC372E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		5270EEA323DC211B0070BC17 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformationViewController.swift; sourceTree = "<group>"; };
 		528DB98124612C7800323E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 				52B9204F23E45E5500420E76 /* MenuTableViewController.swift */,
 				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
 				52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */,
+				5270DF112487DC9300FC372E /* ChangePasswordViewController.swift */,
 			);
 			path = UserControllers;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				522A02D0247153D8004F3AD3 /* News.swift in Sources */,
 				525004C623DC033800DDF2EB /* AIU_App.xcdatamodeld in Sources */,
 				5270EEA623DC34450070BC17 /* StudentInformationViewController.swift in Sources */,
+				5270DF122487DC9300FC372E /* ChangePasswordViewController.swift in Sources */,
 				522A02DC2471A7DB004F3AD3 /* ImageService.swift in Sources */,
 				522ECCC5247060E5002A0F6E /* LanguageTableViewController.swift in Sources */,
 				522A02D724718BAA004F3AD3 /* NewsTableViewCell.swift in Sources */,

@@ -25,15 +25,17 @@ class AllActivitiesTableViewController: UITableViewController {
             vc?.activitiesTitle = allActivitiesTitle[0]
             vc?.activitiesDescc = allActivitiesDesc[0]
             vc?.activitiesImagess = allActivitiesImage[0]
+            self.navigationController?.pushViewController(vc!, animated: true)
         } else if indexPath.row == 2 {
             vc?.activitiesTitle = allActivitiesTitle[1]
             vc?.activitiesDescc = allActivitiesDesc[1]
             vc?.activitiesImagess = allActivitiesImage[1]
-        } else {
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }else if indexPath.row == 4 {
             vc?.activitiesTitle = allActivitiesTitle[2]
             vc?.activitiesDescc = allActivitiesDesc[2]
             vc?.activitiesImagess = allActivitiesImage[2]
+            self.navigationController?.pushViewController(vc!, animated: true)
         }
-        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }

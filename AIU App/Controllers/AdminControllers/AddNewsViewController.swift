@@ -23,7 +23,8 @@ class AddNewsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Add News"
+        navigationController?.navigationBar.prefersLargeTitles = false
         datePickerCreating()
 //
 //        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))

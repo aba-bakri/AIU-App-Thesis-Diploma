@@ -26,15 +26,17 @@ class MenuGuestTableViewController: UITableViewController {
             vc?.alatooInfoTitle = allInfoTitle[0]
             vc?.alatooInfoImagess = allInfoImage[0]
             vc?.alatooInfoDecss = allInfoDesc[0]
+            self.navigationController?.pushViewController(vc!, animated: true)
         } else if indexPath.row == 9 {
             vc?.alatooInfoTitle = allInfoTitle[1]
             vc?.alatooInfoImagess = allInfoImage[1]
             vc?.alatooInfoDecss = allInfoDesc[1]
-        } else {
+            self.navigationController?.pushViewController(vc!, animated: true)
+        } else if indexPath.row == 10 {
             vc?.alatooInfoTitle = allInfoTitle[2]
             vc?.alatooInfoImagess = allInfoImage[2]
             vc?.alatooInfoDecss = allInfoDesc[2]
+            self.navigationController?.pushViewController(vc!, animated: true)
         }
-        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }

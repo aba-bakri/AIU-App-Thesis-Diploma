@@ -29,8 +29,6 @@ class SignUpViewController: UIViewController {
         title = "Sign Up"
         navigationController?.navigationBar.prefersLargeTitles = false
         errorLabel.isHidden = true
-        
-        
     }
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
