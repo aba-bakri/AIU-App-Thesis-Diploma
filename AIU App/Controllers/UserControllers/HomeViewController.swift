@@ -98,7 +98,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         vc?.locationText = news[indexPath.row].location
         vc?.dateText = news[indexPath.row].date
         vc?.descriptionText = news[indexPath.row].description
-//        vc?.detailImageView = news[indexPath.row]
         vc?.detailImageView = UIImage(named: "news")
         self.navigationController?.pushViewController(vc!, animated: true)
     }

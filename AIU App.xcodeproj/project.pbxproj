@@ -16,6 +16,8 @@
 		522A02DA24718CD4004F3AD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A02D924718CD4004F3AD3 /* HomeViewController.swift */; };
 		522A02DC2471A7DB004F3AD3 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A02DB2471A7DB004F3AD3 /* ImageService.swift */; };
 		522A02DE2471C97C004F3AD3 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A02DD2471C97C004F3AD3 /* HomeAdminViewController.swift */; };
+		522A8F812486BBED001D6601 /* NewsUpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A8F7F2486BBED001D6601 /* NewsUpdateTableViewCell.swift */; };
+		522A8F822486BBED001D6601 /* NewsUpdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522A8F802486BBED001D6601 /* NewsUpdateTableViewCell.xib */; };
 		522ECCBA24705B62002A0F6E /* NewTechTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCB924705B62002A0F6E /* NewTechTableViewController.swift */; };
 		522ECCBD24705DC7002A0F6E /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCBC24705DC7002A0F6E /* SocialTableViewController.swift */; };
 		522ECCBF24706026002A0F6E /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522ECCBE24706026002A0F6E /* MedicineTableViewController.swift */; };
@@ -92,6 +94,8 @@
 		522A02D924718CD4004F3AD3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		522A02DB2471A7DB004F3AD3 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		522A02DD2471C97C004F3AD3 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
+		522A8F7F2486BBED001D6601 /* NewsUpdateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUpdateTableViewCell.swift; sourceTree = "<group>"; };
+		522A8F802486BBED001D6601 /* NewsUpdateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsUpdateTableViewCell.xib; sourceTree = "<group>"; };
 		522ECCB924705B62002A0F6E /* NewTechTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTechTableViewController.swift; sourceTree = "<group>"; };
 		522ECCBC24705DC7002A0F6E /* SocialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
 		522ECCBE24706026002A0F6E /* MedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 				522A02D624718BAA004F3AD3 /* NewsTableViewCell.xib */,
 				525B781224796A4900CD4CA2 /* StudentTableViewCell.swift */,
 				525B781324796A4900CD4CA2 /* StudentTableViewCell.xib */,
+				522A8F7F2486BBED001D6601 /* NewsUpdateTableViewCell.swift */,
+				522A8F802486BBED001D6601 /* NewsUpdateTableViewCell.xib */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -562,6 +568,7 @@
 				525004C823DC033800DDF2EB /* Assets.xcassets in Resources */,
 				525004C323DC033800DDF2EB /* Main.storyboard in Resources */,
 				522A02D824718BAA004F3AD3 /* NewsTableViewCell.xib in Resources */,
+				522A8F822486BBED001D6601 /* NewsUpdateTableViewCell.xib in Resources */,
 				525B781524796A4900CD4CA2 /* StudentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,6 +723,7 @@
 				5270EEA423DC211B0070BC17 /* SignInViewController.swift in Sources */,
 				5267F63924842FCB00B14DF5 /* ForgotPasswordViewController.swift in Sources */,
 				52AA4143247A8D1100969765 /* AdminStudentInformationViewController.swift in Sources */,
+				522A8F812486BBED001D6601 /* NewsUpdateTableViewCell.swift in Sources */,
 				52A5E9E224822C7F00BA02C6 /* NewsService.swift in Sources */,
 				5297F67C240D0E7900D372F7 /* UniversityEMailViewController.swift in Sources */,
 				526FD2A22480DEE8006200B7 /* NewsDetailViewController.swift in Sources */,

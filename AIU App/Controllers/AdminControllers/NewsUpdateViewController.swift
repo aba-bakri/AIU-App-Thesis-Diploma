@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 
 class NewsUpdateViewController: UIViewController {
-
     
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var locationField: UITextField!
@@ -22,8 +21,6 @@ class NewsUpdateViewController: UIViewController {
         super.viewDidLoad()
         setupNavBar()
         observeNewsInformation()
-//        debugPrint("Debug__\(Auth.auth().currentUser?.uid)")
-        debugPrint("Debug__\(Database.database().reference().child("News").childByAutoId().key)")
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
@@ -44,36 +41,37 @@ class NewsUpdateViewController: UIViewController {
         let time = timeField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let description = descriptionTextView.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        let newsRef = Database.database().reference().child("News").child(Auth.auth().currentUser!.uid)
+        let newsRef = Database.database().reference()
         
-        let newsObject = [
+        guard let key = newsRef.child("News").childByAutoId().key else { return }
+            
+        let news = [
             "title": title,
             "location" : location,
             "time" : time,
             "description" : description
         ]
         
-        newsRef.updateChildValues(newsObject)
+        let childUpdates = ["/News/\(key)": news]
+        
+        newsRef.updateChildValues(childUpdates)
         navigationController?.popViewController(animated: true)
     }
     
     func observeNewsInformation() {
-        let ref = Database.database().reference()
         
-            guard let uid = Auth.auth().currentUser?.uid else { return }
+//        let ref = Database.database().reference().child("News/\(key)").observe(.value) { (snapshot) in
+//            print(snapshot.value)
+//        }
         
-            ref.child("News").child(uid).observe(.value, with: { (snapshot) in
-                if let dict = snapshot.value as? [String: Any] {
-                    self.titleField.text = dict["title"] as? String
-                    self.locationField.text = dict["location"] as? String
-                    self.timeField.text = dict["time"] as? String
-                    self.descriptionTextView.text = dict["description"] as? String
-                }
-            })
-        
-            NewsService.observeNews(uid) { (newsModel) in
-                NewsService.currentNews = newsModel
-            }
+//        ref.child("News").childByAutoId().observe(.value, with: { (snapshot) in
+//            if let dict = snapshot.value as? [String: Any] {
+//                self.titleField.text = dict["title"] as? String
+//                self.locationField.text = dict["location"] as? String
+//                self.timeField.text = dict["time"] as? String
+//                self.descriptionTextView.text = dict["description"] as? String
+//            }
+//        })
     }
 
 }

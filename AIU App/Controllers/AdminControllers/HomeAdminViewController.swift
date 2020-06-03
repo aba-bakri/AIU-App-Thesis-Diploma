@@ -37,8 +37,8 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
         
         setupBarButtons()
         tableView = UITableView(frame: view.bounds, style: .plain)
-        let cellNib = UINib(nibName: "NewsTableViewCell", bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: "newsCell")
+        let cellNib = UINib(nibName: "NewsUpdateTableViewCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "newsAdminCell")
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor(red: 242/255, green: 242/255, blue: 247/255, alpha: 1)
         view.addSubview(tableView)
@@ -59,6 +59,7 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
+        
         observeNews()
     }
     
@@ -75,7 +76,7 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newsAdminCell", for: indexPath) as! NewsUpdateTableViewCell
         
         var newss: News
         
@@ -85,20 +86,15 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
             newss = news[indexPath.row]
         }
         
-        cell.setNews(news: newss)
+        cell.setAdminNews(news: newss)
         cell.selectionStyle = .default
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "NewsDetailViewController") as? NewsDetailViewController
-        vc?.titleText = news[indexPath.row].title
-        vc?.locationText = news[indexPath.row].location
-        vc?.dateText = news[indexPath.row].date
-        vc?.descriptionText = news[indexPath.row].description
-        vc?.detailImageView = UIImage(named: "news")
-        self.navigationController?.pushViewController(vc!, animated: true)
+        let vc = storyboard.instantiateViewController(identifier: "NewsUpdateViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     func setupBarButtons() {
@@ -133,7 +129,7 @@ class HomeAdminViewController: UIViewController, UITableViewDelegate, UITableVie
 
             var tempNews = [News]()
 
-            for child in snapshot.children {
+            for child in snapshot.children.allObjects {
                 if let childSnapshot = child as? DataSnapshot,
                     let dict = childSnapshot.value as? [String: Any],
                     let title = dict["title"] as? String,

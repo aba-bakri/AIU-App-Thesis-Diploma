@@ -38,6 +38,30 @@ class AddNewsViewController: UIViewController {
 //        imagePicker.delegate = self
     }
     
+    @IBAction func addImageButtonTapped(_ sender: Any) {
+        showImagePickerControllerActionSheet()
+    }
+    
+    func uploadImage(currentUserId: String, image: UIImage, completion: @escaping(Result<URL, Error>) -> Void) {
+        let ref = Storage.storage().reference().child("News").child(currentUserId)
+        guard let imageData = imageView.image?.jpegData(compressionQuality: 0.4) else {return}
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+        ref.putData(imageData, metadata: metaData) { (metadata, error) in
+            guard let metadata = metadata else {
+                completion(.failure(error!))
+                return
+            }
+        }
+        ref.downloadURL { (url, error) in
+            guard let url = url else {
+                completion(.failure(error!))
+                return
+            }
+            completion(.success(url))
+        }
+    }
+    
     func datePickerCreating() {
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date
@@ -57,12 +81,6 @@ class AddNewsViewController: UIViewController {
         dateFormatter.dateFormat = "dd/MM/yyyy"
         timeField.text = dateFormatter.string(from: datePicker.date)
     }
-
-//    @objc func openImagePicker(_ sender:Any) {
-//        // Open Image Picker
-//        self.present(imagePicker, animated: true, completion: nil)
-//    }
-    
     
     @IBAction func addNewsButtonTapped(_ sender: Any) {
         
@@ -79,8 +97,7 @@ class AddNewsViewController: UIViewController {
             "title": title,
             "location" : location,
             "time" : time,
-            "description" : description,
-            "image" : "https://firebasestorage.googleapis.com/v0/b/pmsaiu-1b655.appspot.com/o/news%2FSCIENTIFIC%20WEBINAR%20ON%20EMERGING%20VIRAL%20INFECTIONS%3A?alt=media&token=d26621d1-7efb-430e-96c2-bf478bf058cf"
+            "description" : description
         ]
         
         newsRef.setValue(newsObject) { (error, ref) in
@@ -88,6 +105,9 @@ class AddNewsViewController: UIViewController {
                 self.navigationController?.popViewController(animated: true)
             } else {
                 //Handle the error
+//                uploadImage(currentUserId: uid, image: imageView.image!) { (result) in
+//                    <#code#>
+//                }
             }
         }
     }
@@ -97,8 +117,35 @@ class AddNewsViewController: UIViewController {
 
 extension AddNewsViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
+    func showImagePickerControllerActionSheet() {
+        let alertContoller = UIAlertController(title: "Choose your image", message: nil, preferredStyle: .actionSheet)
+        alertContoller.addAction(UIAlertAction(title: "Choose from Library", style: .default, handler: { (action) in
+            self.showImagePickerController(sourceType: .photoLibrary)
+        }))
+        alertContoller.addAction(UIAlertAction(title: "Take from Camera", style: .default, handler: { (action) in
+            self.showImagePickerController(sourceType: .camera)
+        }))
+        alertContoller.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alertContoller, animated: true, completion: nil)
+    }
+    
+    func showImagePickerController(sourceType: UIImagePickerController.SourceType) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            imageView.image = editedImage
+        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = originalImage
+        }
+        
+        dismiss(animated: true, completion: nil)
     }
     
 }
