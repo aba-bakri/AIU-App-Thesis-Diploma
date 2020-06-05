@@ -38,7 +38,6 @@ class SignInViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] (authResult, error) in
             
             if error != nil {
-                //Couldn't sign in
                 self?.errorLabel.text = error!.localizedDescription
                 self?.errorLabel.isHidden = false
                 DispatchQueue.main.asyncAfter(deadline: .now()+3) {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5203C13E246FB87A00DB7A24 /* UniversitySiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203C13D246FB87A00DB7A24 /* UniversitySiteViewController.swift */; };
+		520AD4E724888B8500807B23 /* UserDepartmentSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AD4E624888B8500807B23 /* UserDepartmentSiteViewController.swift */; };
 		5219BE7E2470226200592AAD /* FacultiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BE7D2470226200592AAD /* FacultiesTableViewController.swift */; };
 		5219BE8024702A5800592AAD /* FacultiesSitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BE7F24702A5800592AAD /* FacultiesSitesViewController.swift */; };
 		522A02D0247153D8004F3AD3 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A02CF247153D8004F3AD3 /* News.swift */; };
@@ -87,6 +88,7 @@
 		17B5D4BDD90B32BAFC11FEE8 /* Pods-AIU AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU AppTests.release.xcconfig"; path = "Target Support Files/Pods-AIU AppTests/Pods-AIU AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3FCAE17060126A0437C37F83 /* Pods-AIU App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIU App.release.xcconfig"; path = "Target Support Files/Pods-AIU App/Pods-AIU App.release.xcconfig"; sourceTree = "<group>"; };
 		5203C13D246FB87A00DB7A24 /* UniversitySiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitySiteViewController.swift; sourceTree = "<group>"; };
+		520AD4E624888B8500807B23 /* UserDepartmentSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDepartmentSiteViewController.swift; sourceTree = "<group>"; };
 		5219BE7D2470226200592AAD /* FacultiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultiesTableViewController.swift; sourceTree = "<group>"; };
 		5219BE7F24702A5800592AAD /* FacultiesSitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultiesSitesViewController.swift; sourceTree = "<group>"; };
 		522A02CF247153D8004F3AD3 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				5270EEA523DC34450070BC17 /* StudentInformationViewController.swift */,
 				52C822E32475BC7600C814AB /* UpdateProfileViewController.swift */,
 				5270DF112487DC9300FC372E /* ChangePasswordViewController.swift */,
+				520AD4E624888B8500807B23 /* UserDepartmentSiteViewController.swift */,
 			);
 			path = UserControllers;
 			sourceTree = "<group>";
@@ -743,6 +746,7 @@
 				529031DF248644F400FC46F4 /* AlaTooInformationViewController.swift in Sources */,
 				5203C13E246FB87A00DB7A24 /* UniversitySiteViewController.swift in Sources */,
 				52A961B224864A76003B12A8 /* AllActivitiesTableViewController.swift in Sources */,
+				520AD4E724888B8500807B23 /* UserDepartmentSiteViewController.swift in Sources */,
 				52F7BD4923F296B6001CE15E /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -920,7 +924,7 @@
 				CODE_SIGN_ENTITLEMENTS = "AIU App/AIU App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z449MSN4LZ;
 				INFOPLIST_FILE = "AIU App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -942,7 +946,7 @@
 				CODE_SIGN_ENTITLEMENTS = "AIU App/AIU App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z449MSN4LZ;
 				INFOPLIST_FILE = "AIU App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
